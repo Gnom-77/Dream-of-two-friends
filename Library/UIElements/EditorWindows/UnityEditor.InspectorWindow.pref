@@ -21,6 +21,6 @@ MonoBehaviour:
   m_Values:
   - '{"m_ShowAlternatingRowBackgrounds":0,"serializedVirtualizationData":{"scrollOffset":{"x":0.0,"y":0.0},"firstVisibleIndex":0,"contentPadding":0.0,"contentHeight":0.0,"anchoredItemIndex":-1,"anchorOffset":0.0}}'
   - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":0.0}'
-  - '{"m_ShowAlternatingRowBackgrounds":2,"serializedVirtualizationData":{"scrollOffset":{"x":0.0,"y":0.0},"firstVisibleIndex":0,"contentPadding":0.0,"contentHeight":0.0,"anchoredItemIndex":0,"anchorOffset":0.0},"m_ExpandedItemIds":[0]}'
-  - '{"m_HasPersistedData":true,"m_SortDescriptions":[],"m_OrderedColumnStates":[{"index":0,"name":"UILayerImportColumn","actualWidth":70.0,"width":{"m_Value":70.0,"m_Unit":0},"visible":true},{"index":1,"name":"UILayerNameColumn","actualWidth":221.19998168945313,"width":{"m_Value":0.0,"m_Unit":0},"visible":true}]}'
-  - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":0.0}'
+  - '{}'
+  - '{}'
+  - '{}'

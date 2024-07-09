@@ -384,6 +384,8 @@
 "Assets/Scripts/Player/Arrow.cs"
 "Assets/Scripts/Player/Bow.cs"
 "Assets/Scripts/Player/Combat.cs"
+"Assets/Scripts/Player/OldPlayerMovement.cs"
+"Assets/Scripts/Player/PlayerControlSettings.cs"
 "Assets/Scripts/Player/PlayerMovement.cs"
 "Assets/Scripts/Player/PlayerNumberEnum.cs"
 "Assets/Scripts/Player/Shield.cs"
