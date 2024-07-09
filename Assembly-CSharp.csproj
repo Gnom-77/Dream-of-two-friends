@@ -60,9 +60,9 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.31f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Camera\MultipleTargetCamera.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerNumberEnum.cs" />
     <Compile Include="Assets\Scripts\Player\Bow.cs" />
-    <Compile Include="Assets\Scripts\Player\OldPlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerControlSettings.cs" />
     <Compile Include="Assets\Scripts\Managers\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\Player\Combat.cs" />
     <Compile Include="Assets\Scripts\Player\Arrow.cs" />

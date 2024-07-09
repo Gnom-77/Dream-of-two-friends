@@ -1,0 +1,230 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\My Project\\Dream of two friends\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|C:\\My Project\\Dream of two friends\\assets\\scripts\\managers\\objectpoolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\objectpoolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|C:\\My Project\\Dream of two friends\\assets\\scripts\\player\\bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|c:\\my project\\dream of two friends\\assets\\scripts\\camera\\multipletargetcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\multipletargetcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|C:\\My Project\\Dream of two friends\\assets\\scripts\\player\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\My Project\\Dream of two friends\\Assets\\MultipleTargetCamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\MultipleTargetCamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|C:\\My Project\\Dream of two friends\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|C:\\My Project\\Dream of two friends\\assets\\scripts\\player\\playernumberenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playernumberenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|C:\\My Project\\Dream of two friends\\assets\\scripts\\menu\\mainmenubutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menu\\mainmenubutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|C:\\My Project\\Dream of two friends\\assets\\scripts\\managers\\objectpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\objectpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|C:\\My Project\\Dream of two friends\\assets\\scripts\\player\\shield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\shield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|C:\\My Project\\Dream of two friends\\assets\\scripts\\player\\combat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59969483-19CC-60A0-3325-F2F550F006FA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\combat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\PlayerControlSettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\PlayerControlSettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\OldPlayerMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Player\\OldPlayerMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MultipleTargetCamera.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Camera\\MultipleTargetCamera.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\MultipleTargetCamera.cs",
+              "ToolTip": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Camera\\MultipleTargetCamera.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Camera\\MultipleTargetCamera.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T13:22:36.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MultipleTargetCamera.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream of two friends\\Assets\\MultipleTargetCamera.cs",
+              "RelativeDocumentMoniker": "Assets\\MultipleTargetCamera.cs",
+              "ToolTip": "C:\\My Project\\Dream of two friends\\Assets\\MultipleTargetCamera.cs",
+              "RelativeToolTip": "Assets\\MultipleTargetCamera.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T13:21:54.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayerNumberEnum.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\PlayerNumberEnum.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerNumberEnum.cs",
+              "ToolTip": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\PlayerNumberEnum.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerNumberEnum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T19:43:19.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PlayerControlSettings.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\PlayerControlSettings.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerControlSettings.cs",
+              "ToolTip": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\PlayerControlSettings.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerControlSettings.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T15:53:55.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainMenuButton.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Menu\\MainMenuButton.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Menu\\MainMenuButton.cs",
+              "ToolTip": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Menu\\MainMenuButton.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Menu\\MainMenuButton.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T05:57:36.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OldPlayerMovement.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\OldPlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\OldPlayerMovement.cs",
+              "ToolTip": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\OldPlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\OldPlayerMovement.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAQwFEAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T21:37:24.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "ToolTip": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "ViewState": "AQIAAPcAAAAAAAAAAAAxwA0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:45:09.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Combat.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\Combat.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Combat.cs",
+              "ToolTip": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\Combat.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Combat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T10:08:38.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ObjectPool.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Managers\\ObjectPool.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\ObjectPool.cs",
+              "ToolTip": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Managers\\ObjectPool.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\ObjectPool.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T19:42:53.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ObjectPoolManager.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Managers\\ObjectPoolManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\ObjectPoolManager.cs",
+              "ToolTip": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Managers\\ObjectPoolManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\ObjectPoolManager.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAACYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T08:44:55.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Arrow.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\Arrow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Arrow.cs",
+              "ToolTip": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\Arrow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Arrow.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAcwDAAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:52:24.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Shield.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\Shield.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Shield.cs",
+              "ToolTip": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\Shield.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Shield.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T21:35:54.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Bow.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\Bow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Bow.cs",
+              "ToolTip": "C:\\My Project\\Dream of two friends\\Assets\\Scripts\\Player\\Bow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Bow.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T21:13:29.45Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

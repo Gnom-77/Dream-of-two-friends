@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private PlayerControlSettings _playerControlSettings;
+    [SerializeField] private PlayerNumber _playerNumber = new PlayerNumber();
     [Header("Movement Settings")]
     [SerializeField] private Rigidbody2D _playerRb2D;
     [SerializeField] private CapsuleCollider2D _playerCollider;
@@ -45,17 +45,13 @@ public class PlayerMovement : MonoBehaviour
     private float slopeSideAngle;
     private float lastSlopeAngle;
     private Vector2 capsuleColliderSize;
-
-    #region
-    private string _moveRight;
-    private string _moveLeft;
-    private string _jump;
-    private string _attack;
-    #endregion
+    // Player Control Button
+    private string _horizontalButtonName;
+    private string _jumpButtonName;
 
     private void Awake()
     {
-        ContolSettings();
+        PlayerControlButton();
     }
 
     private void Start()
@@ -84,13 +80,14 @@ public class PlayerMovement : MonoBehaviour
 
     private int HorizontalDirection()
     {
-        if (Input.GetKey(KeyCode.D))
+        float pressMoveButton = Input.GetAxisRaw(_horizontalButtonName);
+        if (pressMoveButton > 0)
         {
             if (!_isFacingRight)
                 Flip();
             return 1;
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (pressMoveButton < 0)
         {
             if (_isFacingRight)
                 Flip();
@@ -110,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
 
             _jumpBufferCounter = 0f;
         }
-        if (Input.GetKeyUp(KeyCode.J) && _playerRb2D.velocity.y > 0f)
+        if (Input.GetButtonUp(_jumpButtonName) && _playerRb2D.velocity.y > 0f)
         {
             _isSmallJump = true;
 
@@ -134,7 +131,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void JumpBuffer()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetButtonDown(_jumpButtonName))
         {
             _jumpBufferCounter = _jumpBufferTime;
         }
@@ -265,14 +262,19 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void ContolSettings()
+    private void PlayerControlButton()
     {
-        _moveRight = _playerControlSettings.RightMove;
-        _moveLeft = _playerControlSettings.LeftMove;
-        _jump = _playerControlSettings.Jump;
-        _attack = _playerControlSettings.Attack;
-}
-
+        if (_playerNumber == PlayerNumber.PlayerOne)
+        {
+            _horizontalButtonName = "Horizontal One";
+            _jumpButtonName = "Jump One";
+        }
+        else
+        {
+            _horizontalButtonName = "Horizontal Two";
+            _jumpButtonName = "Jump Two";
+        }
+    }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
