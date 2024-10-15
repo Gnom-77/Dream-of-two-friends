@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -13,8 +11,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _jumpForce;
     [SerializeField] private float slopeCheckDistance;
     [SerializeField] private float maxSlopeAngle;
-    [SerializeField] PhysicsMaterial2D _lowFriction;
-    [SerializeField] PhysicsMaterial2D _hightFriction;
+    [SerializeField] private PhysicsMaterial2D _lowFriction;
+    [SerializeField] private PhysicsMaterial2D _hightFriction;
     [Space(10)]
     [Header("Ground")]
     [SerializeField] private float groundCheckRadius;
@@ -163,13 +161,13 @@ public class PlayerMovement : MonoBehaviour
         {
             _playerRb2D.velocity = new Vector2(_playerRb2D.velocity.x, _jumpForce);
             _isJump = false;
-            Debug.Log("Jump");
+            //Debug.Log("Jump");
         }
         if (_isSmallJump)
         {
             _playerRb2D.velocity = new Vector2(_playerRb2D.velocity.x, _playerRb2D.velocity.y * 0.5f);
             _isSmallJump = false;
-            Debug.Log("Small Jump");
+            //Debug.Log("Small Jump");
         }
     }
 

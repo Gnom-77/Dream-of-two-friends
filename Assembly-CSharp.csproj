@@ -62,16 +62,25 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Camera\MultipleTargetCamera.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerNumberEnum.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\CharactersIcons.cs" />
     <Compile Include="Assets\Scripts\Player\Bow.cs" />
-    <Compile Include="Assets\Scripts\Player\OldPlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerControlSettings.cs" />
-    <Compile Include="Assets\Scripts\Managers\ObjectPool.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\Player\SavedNextSpawnPoint.cs" />
+    <Compile Include="Assets\Scripts\ObjectPool\ObjectPoolManager.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueData.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueElements.cs" />
+    <Compile Include="Assets\Scripts\ObjectPool\ObjectPool.cs" />
+    <Compile Include="Assets\Scripts\Player\Spawn Position.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\CharacterIcon.cs" />
     <Compile Include="Assets\Scripts\Player\Combat.cs" />
+    <Compile Include="Assets\Scripts\Door\Door.cs" />
     <Compile Include="Assets\Scripts\Player\Arrow.cs" />
     <Compile Include="Assets\Scripts\Player\Shield.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenuButton.cs" />
+    <Compile Include="Assets\Scripts\Flying Broom\BroomMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Managers\ObjectPoolManager.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

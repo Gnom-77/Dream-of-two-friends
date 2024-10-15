@@ -1,0 +1,128 @@
+{
+    "dialogues": [
+        {
+            "dialogue_name": "Start dialog",
+            "entries": [
+                {
+                    "character": [
+                        "Ведьма",
+                        "Neutral"
+                    ],
+                    "text": "Привет, давно не виделись, как дела?",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": null,
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                },
+                {
+                    "character": [
+                        "Принц",
+                        "Neutral"
+                    ],
+                    "text": "Все хорошо, пойдем гулять!",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": null,
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                },
+                {
+                    "character": [
+                        "Ведьма",
+                        "Neutral"
+                    ],
+                    "text": "Отличная идея, пошли!",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": "end_dialog",
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                }
+            ]
+        },
+        {
+            "dialogue_name": "Next dialog",
+            "entries": [
+                {
+                    "character": [
+                        "Witch",
+                        "Neutral"
+                    ],
+                    "text": "Hi, it's been a while, how are you?",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": null,
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                },
+                {
+                    "character": [
+                        "Prince",
+                        "Neutral"
+                    ],
+                    "text": "i, everything is fine, let's go for a walk!",
+                    "go_to": [
+                        "First",
+                        "End"
+                    ],
+                    "options": [
+                        "Don't you want to play?",
+                        "Bye"
+                    ],
+                    "wait_seconds": null,
+                    "function": null,
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                }
+            ]
+        },
+        {
+            "dialogue_name": "First",
+            "entries": [
+                {
+                    "character": [
+                        "Prince",
+                        "Neutral"
+                    ],
+                    "text": "Yes, let's play!",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": "end_dialog",
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                }
+            ]
+        },
+        {
+            "dialogue_name": "End",
+            "entries": [
+                {
+                    "character": [
+                        "Prince",
+                        "Neutral"
+                    ],
+                    "text": "Bye",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": "end_dialog",
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                }
+            ]
+        }
+    ]
+}
