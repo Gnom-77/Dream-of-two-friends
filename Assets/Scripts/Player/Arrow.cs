@@ -52,6 +52,6 @@ public class Arrow : MonoBehaviour
 
     private void Movement()
     {
-        _arrowRb2D.velocity = _arrowRb2D.transform.right * _speed;
+        _arrowRb2D.linearVelocity = _arrowRb2D.transform.right * _speed;
     }
 }

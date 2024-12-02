@@ -25,7 +25,7 @@ public class BroomMovement : MonoBehaviour
     private void Movement()
     {
         _targetVelocity.Set(_directionOfMovementHorizontal, _directionOfMovementVertical);
-        _broomRb2D.velocity = _targetVelocity.normalized * _speed;
+        _broomRb2D.linearVelocity = _targetVelocity.normalized * _speed;
     }
 
     private int HorizontalDirection()

@@ -105,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
 
             _jumpBufferCounter = 0f;
         }
-        if (Input.GetButtonUp(_jumpButtonName) && _playerRb2D.velocity.y > 0f)
+        if (Input.GetButtonUp(_jumpButtonName) && _playerRb2D.linearVelocity.y > 0f)
         {
             _isSmallJump = true;
 
@@ -144,28 +144,28 @@ public class PlayerMovement : MonoBehaviour
         if(isGrounded && !isOnSlope && !_isJump)
         {
             _targetVelocity.Set(_horizontalSpeed * _directionOfMovement, 0.0f);
-            _playerRb2D.velocity = _targetVelocity;
+            _playerRb2D.linearVelocity = _targetVelocity;
         }
         else if(isGrounded && isOnSlope && canWalkOnSlope && !_isJump)
         {
             _targetVelocity.Set(_horizontalSpeed * slopeNormalPerp.x * -_directionOfMovement, _horizontalSpeed * slopeNormalPerp.y * -_directionOfMovement);
-            _playerRb2D.velocity = _targetVelocity;
+            _playerRb2D.linearVelocity = _targetVelocity;
         }
         else if (!isGrounded)
         {
-            _targetVelocity.Set(_horizontalSpeed * _directionOfMovement, _playerRb2D.velocity.y);
-            _playerRb2D.velocity = _targetVelocity;
+            _targetVelocity.Set(_horizontalSpeed * _directionOfMovement, _playerRb2D.linearVelocity.y);
+            _playerRb2D.linearVelocity = _targetVelocity;
         }
 
         if (_isJump)
         {
-            _playerRb2D.velocity = new Vector2(_playerRb2D.velocity.x, _jumpForce);
+            _playerRb2D.linearVelocity = new Vector2(_playerRb2D.linearVelocity.x, _jumpForce);
             _isJump = false;
             //Debug.Log("Jump");
         }
         if (_isSmallJump)
         {
-            _playerRb2D.velocity = new Vector2(_playerRb2D.velocity.x, _playerRb2D.velocity.y * 0.5f);
+            _playerRb2D.linearVelocity = new Vector2(_playerRb2D.linearVelocity.x, _playerRb2D.linearVelocity.y * 0.5f);
             _isSmallJump = false;
             //Debug.Log("Small Jump");
         }
