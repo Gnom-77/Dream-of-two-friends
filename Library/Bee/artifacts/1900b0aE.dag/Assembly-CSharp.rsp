@@ -393,6 +393,7 @@
 "Assets/Scripts/Player/Arrow.cs"
 "Assets/Scripts/Player/Bow.cs"
 "Assets/Scripts/Player/Combat.cs"
+"Assets/Scripts/Player/HandRotation.cs"
 "Assets/Scripts/Player/PlayerMovement.cs"
 "Assets/Scripts/Player/PlayerNumberEnum.cs"
 "Assets/Scripts/Player/SavedNextSpawnPoint.cs"

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private PlayerNumber _playerNumber = new PlayerNumber();
+    [SerializeField] private PlayerNumber _playerNumber = new();
     [Header("Movement Settings")]
     [SerializeField] private Rigidbody2D _playerRb2D;
     [SerializeField] private CapsuleCollider2D _playerCollider;
