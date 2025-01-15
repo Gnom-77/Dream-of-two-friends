@@ -89,12 +89,7 @@ public class ObjectPoolManager : MonoBehaviour
             return element;
         }
 
-        if (_autoExpand)
-        {
-            return CreateElement(true);
-        }
-
-        if (_pool.Count < _maxCapacity)
+        if (_autoExpand || _pool.Count < _maxCapacity)
         {
             return CreateElement(true);
         }

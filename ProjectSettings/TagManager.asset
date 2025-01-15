@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags:
   - Ground
   - Player One
@@ -15,7 +15,7 @@ TagManager:
   - Water
   - UI
   - Platform
-  - 
+  - Player
   - 
   - 
   - 
@@ -47,3 +47,11 @@ TagManager:
   - name: Platform
     uniqueID: 2795789371
     locked: 0
+  - name: Characters
+    uniqueID: 866596681
+    locked: 0
+  - name: Foreground
+    uniqueID: 100115515
+    locked: 0
+  m_RenderingLayers:
+  - Default
