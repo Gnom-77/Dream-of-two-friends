@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(ObjectPoolManager))]
@@ -26,7 +24,6 @@ public class Bow : MonoBehaviour
     private void Shot()
     {
         _pool.GetFreeElement(_bowPosition.position, _bowPosition.rotation);
-        //Instantiate(_arrowPrefab, _bowPosition.position, _bowPosition.rotation);
     }
 
 }

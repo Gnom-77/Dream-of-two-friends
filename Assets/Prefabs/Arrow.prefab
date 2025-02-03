@@ -237,7 +237,7 @@ Rigidbody2D:
   m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
+  m_UseAutoMass: 1
   m_Mass: 20
   m_LinearDamping: 1.15
   m_AngularDamping: 0.05
@@ -317,6 +317,7 @@ MonoBehaviour:
   _arrowColl2D: {fileID: 6922457836789008896}
   _arrowheadColl2D: {fileID: 826609158154896923}
   _groundTagName: Ground
+  _invulnerabilityArrowTime: 0.02
 --- !u!114 &4401721856236558392
 MonoBehaviour:
   m_ObjectHideFlags: 0

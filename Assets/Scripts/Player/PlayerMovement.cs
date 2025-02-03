@@ -6,16 +6,16 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement Settings")]
     [SerializeField] private Rigidbody2D _playerRb2D;
     [SerializeField] private CapsuleCollider2D _playerCollider;
-    [SerializeField] private Transform groundCheck;
+    [SerializeField] private Transform _groundCheck;
     [SerializeField] private float _horizontalSpeed;
     [SerializeField] private float _jumpForce;
-    [SerializeField] private float slopeCheckDistance;
-    [SerializeField] private float maxSlopeAngle;
+    [SerializeField] private float _slopeCheckDistance;
+    [SerializeField] private float _maxSlopeAngle;
     [SerializeField] private PhysicsMaterial2D _lowFriction;
     [SerializeField] private PhysicsMaterial2D _hightFriction;
     [Space(10)]
     [Header("Ground")]
-    [SerializeField] private float groundCheckRadius;
+    [SerializeField] private float _groundCheckRadius;
     [SerializeField] private LayerMask _groundMask;
     [Space(10)]
     [Header("Coyote Time Settings")]
@@ -29,20 +29,19 @@ public class PlayerMovement : MonoBehaviour
     private bool _isFacingRight;
     private bool _isJump = false;
     private bool _isSmallJump = false;
-    private bool isGrounded;
+    private bool _isGrounded;
     private int _directionOfMovement = 0;
     // Coyote Time
     private float _coyoteTimeCounter;
     // Jump Buffer Time Settings
     private float _jumpBufferCounter;
     // Slope
-    private Vector2 slopeNormalPerp;
-    private bool isOnSlope;
-    private bool canWalkOnSlope;
-    private float slopeDownAngle;
-    private float slopeSideAngle;
-    private float lastSlopeAngle;
-    private Vector2 capsuleColliderSize;
+    private Vector2 _slopeNormalPerp;
+    private bool _isOnSlope;
+    private bool _canWalkOnSlope;
+    private float _slopeDownAngle;
+    private float _slopeSideAngle;
+    private float _lastSlopeAngle;
     // Player Control Button
     private string _horizontalButtonName;
     private string _jumpButtonName;
@@ -54,7 +53,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        capsuleColliderSize = _playerCollider.size;
         if (transform.rotation.y == 0)
             _isFacingRight = true;
         else
@@ -141,17 +139,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void Movement()
     {
-        if(isGrounded && !isOnSlope && !_isJump)
+        if(_isGrounded && !_isOnSlope && !_isJump)
         {
             _targetVelocity.Set(_horizontalSpeed * _directionOfMovement, 0.0f);
             _playerRb2D.linearVelocity = _targetVelocity;
         }
-        else if(isGrounded && isOnSlope && canWalkOnSlope && !_isJump)
+        else if(_isGrounded && _isOnSlope && _canWalkOnSlope && !_isJump)
         {
-            _targetVelocity.Set(_horizontalSpeed * slopeNormalPerp.x * -_directionOfMovement, _horizontalSpeed * slopeNormalPerp.y * -_directionOfMovement);
+            _targetVelocity.Set(_horizontalSpeed * _slopeNormalPerp.x * -_directionOfMovement, _horizontalSpeed * _slopeNormalPerp.y * -_directionOfMovement);
             _playerRb2D.linearVelocity = _targetVelocity;
         }
-        else if (!isGrounded)
+        else if (!_isGrounded)
         {
             _targetVelocity.Set(_horizontalSpeed * _directionOfMovement, _playerRb2D.linearVelocity.y);
             _playerRb2D.linearVelocity = _targetVelocity;
@@ -161,22 +159,20 @@ public class PlayerMovement : MonoBehaviour
         {
             _playerRb2D.linearVelocity = new Vector2(_playerRb2D.linearVelocity.x, _jumpForce);
             _isJump = false;
-            //Debug.Log("Jump");
         }
         if (_isSmallJump)
         {
             _playerRb2D.linearVelocity = new Vector2(_playerRb2D.linearVelocity.x, _playerRb2D.linearVelocity.y * 0.5f);
             _isSmallJump = false;
-            //Debug.Log("Small Jump");
         }
     }
 
 
     private bool CheckGrounding()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, _groundMask);
+        _isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundMask);
 
-        return isGrounded;
+        return _isGrounded;
     }
 
     private void Flip()
@@ -188,69 +184,68 @@ public class PlayerMovement : MonoBehaviour
 
     private void SlopeCheck()
     {
-        Vector2 checkPos = transform.position - (Vector3)(new Vector2(0.0f, capsuleColliderSize.y / 2));
-
+        Vector2 checkPos = transform.position - (Vector3)(new Vector2(0.0f, _playerCollider.size.y / 2));
         SlopeCheckHorizontal(checkPos);
         SlopeCheckVertical(checkPos);
     }
     private void SlopeCheckHorizontal(Vector2 checkPos)
     {
-        RaycastHit2D slopeHitFront = Physics2D.Raycast(checkPos, transform.right, slopeCheckDistance, _groundMask);
-        RaycastHit2D slopeHitBack = Physics2D.Raycast(checkPos, -transform.right, slopeCheckDistance, _groundMask);
+        RaycastHit2D slopeHitFront = Physics2D.Raycast(checkPos, transform.right, _slopeCheckDistance, _groundMask);
+        RaycastHit2D slopeHitBack = Physics2D.Raycast(checkPos, -transform.right, _slopeCheckDistance, _groundMask);
 
         if (slopeHitFront)
         {
-            isOnSlope = true;
+            _isOnSlope = true;
 
-            slopeSideAngle = Vector2.Angle(slopeHitFront.normal, Vector2.up);
+            _slopeSideAngle = Vector2.Angle(slopeHitFront.normal, Vector2.up);
 
         }
         else if (slopeHitBack)
         {
-            isOnSlope = true;
+            _isOnSlope = true;
 
-            slopeSideAngle = Vector2.Angle(slopeHitBack.normal, Vector2.up);
+            _slopeSideAngle = Vector2.Angle(slopeHitBack.normal, Vector2.up);
         }
         else
         {
-            slopeSideAngle = 0.0f;
-            isOnSlope = false;
+            _slopeSideAngle = 0.0f;
+            _isOnSlope = false;
         }
 
     }
 
     private void SlopeCheckVertical(Vector2 checkPos)
     {
-        RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.down, slopeCheckDistance, _groundMask);
+        RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.down, _slopeCheckDistance, _groundMask);
 
         if (hit)
         {
 
-            slopeNormalPerp = Vector2.Perpendicular(hit.normal).normalized;
+            _slopeNormalPerp = Vector2.Perpendicular(hit.normal).normalized;
 
-            slopeDownAngle = Vector2.Angle(hit.normal, Vector2.up);
+            _slopeDownAngle = Vector2.Angle(hit.normal, Vector2.up);
 
-            if (slopeDownAngle != lastSlopeAngle)
+            if (_slopeDownAngle != _lastSlopeAngle)
             {
-                isOnSlope = true;
+                _isOnSlope = true;
             }
 
-            lastSlopeAngle = slopeDownAngle;
+            _lastSlopeAngle = _slopeDownAngle;
 
-            Debug.DrawRay(hit.point, slopeNormalPerp, Color.blue);
+            Debug.DrawRay(hit.point, _slopeNormalPerp, Color.blue);
             Debug.DrawRay(hit.point, hit.normal, Color.green);
         }
 
-        if (slopeDownAngle > maxSlopeAngle || slopeSideAngle > maxSlopeAngle)
+        if (_slopeDownAngle > _maxSlopeAngle || _slopeSideAngle > _maxSlopeAngle)
         {
-            canWalkOnSlope = false;
+            _canWalkOnSlope = false;
         }
         else
         {
-            canWalkOnSlope = true;
+            _canWalkOnSlope = true;
         }
 
-        if (isOnSlope && canWalkOnSlope && _directionOfMovement == 0.0f)
+        if (_isOnSlope && _canWalkOnSlope && _directionOfMovement == 0.0f)
         {
             _playerCollider.sharedMaterial = _hightFriction;
         }
@@ -276,6 +271,6 @@ public class PlayerMovement : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        Gizmos.DrawWireSphere(_groundCheck.position, _groundCheckRadius);
     }
 }
