@@ -61,18 +61,22 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.29f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Inventory\ItemObject.cs" />
     <Compile Include="Assets\Scripts\Camera\MultipleTargetCamera.cs" />
     <Compile Include="Assets\Scripts\Dialogue\CharactersIcons.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\Inventory\UIInventoryManager.cs" />
     <Compile Include="Assets\Scripts\Player\SavedNextSpawnPoint.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueData.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueElements.cs" />
     <Compile Include="Assets\Scripts\ObjectPool\ObjectPool.cs" />
+    <Compile Include="Assets\Scripts\Inventory\InventoryItem.cs" />
     <Compile Include="Assets\Scripts\Dialogue\CharacterIcon.cs" />
     <Compile Include="Assets\Scripts\Player\Combat.cs" />
     <Compile Include="Assets\Scripts\Player\Arrow.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
+    <Compile Include="Assets\Scripts\Inventory\InventorySystem.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerNumberEnum.cs" />
     <Compile Include="Assets\Scripts\Player\HandRotation.cs" />
     <Compile Include="Assets\Scripts\Player\Bow.cs" />
@@ -81,8 +85,10 @@
     <Compile Include="Assets\Scripts\Door\Door.cs" />
     <Compile Include="Assets\Scripts\Player\Shield.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenuButton.cs" />
+    <Compile Include="Assets\Scripts\Inventory\InventoryItemData.cs" />
     <Compile Include="Assets\Scripts\Flying Broom\BroomMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Inventory\UIInventoryItemSlot.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

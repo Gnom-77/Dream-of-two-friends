@@ -115,7 +115,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void CoyoteTime()
     {
-        if (CheckGrounding())
+        _isGrounded = CheckGrounding();
+        if (_isGrounded)
         {
             _coyoteTimeCounter = _coyoteTime;
         }
@@ -170,9 +171,9 @@ public class PlayerMovement : MonoBehaviour
 
     private bool CheckGrounding()
     {
-        _isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundMask);
+        bool isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundMask);
 
-        return _isGrounded;
+        return isGrounded;
     }
 
     private void Flip()
