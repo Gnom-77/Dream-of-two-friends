@@ -45,6 +45,8 @@ public class PlayerMovement : MonoBehaviour
     // Player Control Button
     private string _horizontalButtonName;
     private string _jumpButtonName;
+    // Player Check Aiming
+    private bool _isAiming;
 
     private void Awake()
     {
@@ -61,6 +63,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (_isAiming)
+        {
+            _directionOfMovement = 0;
+            return;
+        }
+
         _directionOfMovement = HorizontalDirection();
         CoyoteTime();
         JumpBuffer();
@@ -72,6 +80,11 @@ public class PlayerMovement : MonoBehaviour
     {
         SlopeCheck();
         Movement();
+    }
+
+    public void SetAiming(bool isAiming)
+    {
+        _isAiming = isAiming;
     }
 
     private int HorizontalDirection()
@@ -269,6 +282,7 @@ public class PlayerMovement : MonoBehaviour
             _jumpButtonName = "Jump Two";
         }
     }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;

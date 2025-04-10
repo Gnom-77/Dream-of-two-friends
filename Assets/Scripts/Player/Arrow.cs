@@ -4,17 +4,17 @@ using UnityEngine;
 [RequireComponent(typeof(ObjectPool))]
 public class Arrow : MonoBehaviour
 {
-    [SerializeField] private float _speed = 5f;
-    [SerializeField] private float _lifeTime = 5f;
     [SerializeField] private Rigidbody2D _arrowRb2D;
     [SerializeField] private Collider2D _arrowColl2D;
     [SerializeField] private Collider2D _arrowheadColl2D;
     [SerializeField] private string _groundTagName;
+    [SerializeField] private float _lifeTime = 5f;
     [SerializeField] private float _invulnerabilityArrowTime = 0.5f;
 
     private ObjectPool _poolObject;
     private int _groundAndWallLayerMask;
-    private float _timeAfterShot; 
+    private float _timeAfterShot;
+    private bool _isTrigger;
 
     private void Start()
     {
@@ -22,17 +22,20 @@ public class Arrow : MonoBehaviour
         _poolObject = GetComponent<ObjectPool>();
         _groundAndWallLayerMask = LayerMask.GetMask("Ground", "Wall");
     }
-    private void Update()
-    {
-        Movement();
-        _timeAfterShot += Time.deltaTime;
-    }
-
     private void OnEnable()
     {
+        _isTrigger = false;
         _timeAfterShot = 0;
         StartCoroutine(Destroy());
     }
+
+    private void Update()
+    {
+        if (!_isTrigger)
+            Movement();
+        _timeAfterShot += Time.deltaTime;
+    }
+
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
@@ -41,8 +44,9 @@ public class Arrow : MonoBehaviour
         {
             if (_timeAfterShot > _invulnerabilityArrowTime)
             {
-            _arrowColl2D.enabled = true;
-            _arrowRb2D.constraints = RigidbodyConstraints2D.FreezeAll;
+                _isTrigger = true;
+                _arrowColl2D.enabled = true;
+                _arrowRb2D.constraints = RigidbodyConstraints2D.FreezeAll;
             }
         }
     }
@@ -62,6 +66,7 @@ public class Arrow : MonoBehaviour
 
     private void Movement()
     {
-        _arrowRb2D.linearVelocity = _arrowRb2D.transform.right * _speed;
+        float angle = Mathf.Atan2(_arrowRb2D.linearVelocity.y, _arrowRb2D.linearVelocity.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 }
