@@ -20,7 +20,7 @@ public class Arrow : MonoBehaviour
     {
         _arrowColl2D.enabled = false;
         _poolObject = GetComponent<ObjectPool>();
-        _groundAndWallLayerMask = LayerMask.GetMask("Ground", "Wall");
+        _groundAndWallLayerMask = LayerMask.GetMask("Ground", "Wall", "Platform");
     }
     private void OnEnable()
     {

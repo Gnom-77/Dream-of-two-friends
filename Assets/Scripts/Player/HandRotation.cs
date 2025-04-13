@@ -11,10 +11,6 @@ public class HandRotation : MonoBehaviour
     private void Update()
     {
         PlayerInput();
-    }
-
-    private void FixedUpdate()
-    {
         RoteteHand();
     }
 

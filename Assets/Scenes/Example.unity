@@ -235,6 +235,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f8963eb4019940448a348bbbfbae7d8, type: 3}
+--- !u!4 &330273600 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3217011046657161280, guid: 04ee0793a67f3564fb1efd3f1915644b, type: 3}
+  m_PrefabInstance: {fileID: 418122142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &418122142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -252,8 +257,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3925547537220266753, guid: 04ee0793a67f3564fb1efd3f1915644b, type: 3}
+      propertyPath: _groundCheck
+      value: 
+      objectReference: {fileID: 330273600}
+    - target: {fileID: 3925547537220266753, guid: 04ee0793a67f3564fb1efd3f1915644b, type: 3}
       propertyPath: _playerNumber
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925547537220266753, guid: 04ee0793a67f3564fb1efd3f1915644b, type: 3}
+      propertyPath: _groundCheckRadius
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: 4919442767987820347, guid: 04ee0793a67f3564fb1efd3f1915644b, type: 3}
       propertyPath: m_Color.b
@@ -269,11 +282,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7305193431260643298, guid: 04ee0793a67f3564fb1efd3f1915644b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.2976065
+      value: -0.47
       objectReference: {fileID: 0}
     - target: {fileID: 7305193431260643298, guid: 04ee0793a67f3564fb1efd3f1915644b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.4618474
+      value: -1.22
       objectReference: {fileID: 0}
     - target: {fileID: 7305193431260643298, guid: 04ee0793a67f3564fb1efd3f1915644b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -662,7 +675,7 @@ GameObject:
   - component: {fileID: 1004370519}
   - component: {fileID: 1004370518}
   - component: {fileID: 1004370520}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Square (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -956,7 +969,7 @@ GameObject:
   - component: {fileID: 1191089192}
   - component: {fileID: 1191089191}
   - component: {fileID: 1191089190}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Square (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1480,6 +1493,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8818072393037074756, guid: 04ee0793a67f3564fb1efd3f1915644b, type: 3}
+      propertyPath: _point
+      value: 
+      objectReference: {fileID: 5464641879725638472, guid: db3e34bb33f729541ad65ef642e7edee, type: 3}
+    - target: {fileID: 8818072393037074756, guid: 04ee0793a67f3564fb1efd3f1915644b, type: 3}
       propertyPath: _bowPosition
       value: 
       objectReference: {fileID: 472381469}
@@ -1489,12 +1506,20 @@ PrefabInstance:
       objectReference: {fileID: 618996524}
     - target: {fileID: 8818072393037074756, guid: 04ee0793a67f3564fb1efd3f1915644b, type: 3}
       propertyPath: _rotationSpeed
-      value: 10
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8818072393037074756, guid: 04ee0793a67f3564fb1efd3f1915644b, type: 3}
+      propertyPath: _numberOfPoints
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8818072393037074756, guid: 04ee0793a67f3564fb1efd3f1915644b, type: 3}
       propertyPath: _playerMovement
       value: 
       objectReference: {fileID: 1938353842}
+    - target: {fileID: 8818072393037074756, guid: 04ee0793a67f3564fb1efd3f1915644b, type: 3}
+      propertyPath: _spaceBetweenPoints
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1833,6 +1858,10 @@ PrefabInstance:
     - target: {fileID: 6165956729789251008, guid: 69a6bbf9a1e884045a69d5e487a5111f, type: 3}
       propertyPath: m_Name
       value: Cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6165956729789251008, guid: 69a6bbf9a1e884045a69d5e487a5111f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

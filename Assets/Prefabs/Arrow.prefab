@@ -252,7 +252,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &6922457836789008896
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -311,11 +311,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b1120ce1d2b7a4ca4c7aaf8c68c772, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lifeTime: 2
   _arrowRb2D: {fileID: 2175154539286929880}
   _arrowColl2D: {fileID: 6922457836789008896}
   _arrowheadColl2D: {fileID: 826609158154896923}
   _groundTagName: Ground
+  _lifeTime: 7
   _invulnerabilityArrowTime: 0.02
 --- !u!114 &4401721856236558392
 MonoBehaviour:

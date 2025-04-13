@@ -9,6 +9,11 @@ public class Bow : MonoBehaviour
     [SerializeField] PlayerMovement _playerMovement;
     [SerializeField] private float _rotationSpeed;
     [SerializeField] private float _arrowSpeed = 12f;
+    [Header("Trajectory projection")]
+    [SerializeField] private GameObject _point;
+    [SerializeField] private int _numberOfPoints;
+    [SerializeField] private float _spaceBetweenPoints;
+    private GameObject[] _points;
 
     private ObjectPoolManager _pool;
     private float _rotateDirection = 0;
@@ -17,6 +22,11 @@ public class Bow : MonoBehaviour
     private void Start()
     {
         _pool = GetComponent<ObjectPoolManager>();
+        _points = new GameObject[_numberOfPoints];
+        for (int i = 0; i < _numberOfPoints; i++)
+        {
+            _points[i] = Instantiate(_point, _bowPosition.position, Quaternion.identity);
+        }
     }
 
     void Update()
@@ -26,12 +36,21 @@ public class Bow : MonoBehaviour
             PlayerInput();
             _isAiming = true;
             _playerMovement.SetAiming(_isAiming);
+            for (int i = 0; i < _numberOfPoints; i++)
+            {
+                _points[i].SetActive(true);
+                _points[i].transform.position = PointPosition(i * _spaceBetweenPoints);
+            }
         }
-        if (!Input.GetKey(KeyCode.K))
+        else
         {
             _isAiming = false;
             _playerMovement.SetAiming(_isAiming);
             SetDefaultPosition();
+            for (int i = 0; i < _numberOfPoints; i++)
+            {
+                _points[i].SetActive(false);
+            }
         }
     }
 
@@ -48,6 +67,15 @@ public class Bow : MonoBehaviour
         ObjectPool arrow = _pool.GetFreeElement(_bowPosition.position, _bowPosition.rotation);
         Rigidbody2D arrowRb2D = arrow.GetRigidBody2D;
         arrowRb2D.linearVelocity = arrowRb2D.transform.right * _arrowSpeed;
+    }
+
+    private Vector2 PointPosition(float timeAfterShot)
+    {
+        Vector2 initialPosition = _bowPosition.position;
+        Vector2 initialVelocity = _bowPosition.right * _arrowSpeed;
+
+        Vector2 position = initialPosition + initialVelocity * timeAfterShot + 0.5f * timeAfterShot * timeAfterShot * Physics2D.gravity;
+        return position;
     }
 
     private void PlayerInput()
