@@ -31,12 +31,12 @@
       "version": "3.0.31",
       "source": "registry"
     },
-    "com.unity.ide.visualstudio@2.0.22": {
+    "com.unity.ide.visualstudio@2.0.23": {
       "name": "com.unity.ide.visualstudio",
       "resolvedPath": "C:\\My Project\\Dream-of-two-friends\\Library\\PackageCache\\com.unity.ide.visualstudio",
-      "fingerprint": "8140e851d83e922ca2021b04a89519de94ebe38c",
+      "fingerprint": "198cdf337d13c83ca953581515630d66b779e92b",
       "editorCompatibility": "2019.4.25f1",
-      "version": "2.0.22",
+      "version": "2.0.23",
       "source": "registry"
     },
     "com.unity.multiplayer.center@1.0.0": {
