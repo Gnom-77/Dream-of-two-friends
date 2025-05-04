@@ -44,11 +44,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Platform
+  - name: Background
+    uniqueID: 3247952581
+    locked: 0
+  - name: Back Platform
     uniqueID: 2795789371
     locked: 0
-  - name: Characters
+  - name: Static Person
+    uniqueID: 4008170633
+    locked: 0
+  - name: Characters One
     uniqueID: 866596681
+    locked: 0
+  - name: Characters Two
+    uniqueID: 37097185
+    locked: 0
+  - name: Front Platform
+    uniqueID: 2640875225
     locked: 0
   - name: Foreground
     uniqueID: 100115515

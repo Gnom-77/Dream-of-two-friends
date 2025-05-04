@@ -23,6 +23,9 @@ public class PlayerMovement : MonoBehaviour
     [Space(10)]
     [Header("Jump Buffer Time Settings")]
     [SerializeField] private float _jumpBufferTime;
+    [Space(10)]
+    [Header("Player Animation")]
+    [SerializeField] private Animator _animator;
 
 
     private Vector2 _targetVelocity;
@@ -47,6 +50,8 @@ public class PlayerMovement : MonoBehaviour
     private string _jumpButtonName;
     // Player Check Aiming
     private bool _isAiming;
+    // Player Landing
+    private bool _isLanding;
 
     private void Awake()
     {
@@ -73,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
         CoyoteTime();
         JumpBuffer();
         Jump();
+        OnLanding();
     }
 
 
@@ -90,6 +96,7 @@ public class PlayerMovement : MonoBehaviour
     private int HorizontalDirection()
     {
         float pressMoveButton = Input.GetAxisRaw(_horizontalButtonName);
+        _animator.SetFloat("Run", Mathf.Abs(pressMoveButton));
         if (pressMoveButton > 0)
         {
             if (!_isFacingRight)
@@ -173,11 +180,17 @@ public class PlayerMovement : MonoBehaviour
         {
             _playerRb2D.linearVelocity = new Vector2(_playerRb2D.linearVelocity.x, _jumpForce);
             _isJump = false;
+
+            _animator.SetBool("IsJumping", true);
+            _isLanding = false;
         }
         if (_isSmallJump)
         {
             _playerRb2D.linearVelocity = new Vector2(_playerRb2D.linearVelocity.x, _playerRb2D.linearVelocity.y * 0.5f);
             _isSmallJump = false;
+
+            _animator.SetBool("IsJumping", true);
+            _isLanding = false;
         }
     }
 
@@ -283,9 +296,21 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void OnLanding()
+    {
+        if (_isLanding == false && CheckGrounding())
+        {
+            _isLanding = true;
+            _animator.SetBool("IsJumping", false);
+        }
+    }
+
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(_groundCheck.position, _groundCheckRadius);
+        if (_groundCheck)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(_groundCheck.position, _groundCheckRadius);
+        }
     }
 }
