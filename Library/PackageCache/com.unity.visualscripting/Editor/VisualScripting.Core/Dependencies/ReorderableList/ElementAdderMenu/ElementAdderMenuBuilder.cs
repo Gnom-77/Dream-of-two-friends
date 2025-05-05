@@ -14,7 +14,7 @@ namespace Unity.VisualScripting.ReorderableList.Element_Adder_Menu
     ///     The following example demonstrates how to build and display a menu which
     ///     allows the user to add elements to a given context object upon clicking a button:
     ///     </para>
-    ///     <code language="csharp"><![CDATA[
+    ///     <code lang="csharp"><![CDATA[
     ///  public class ShoppingListElementAdder : IElementAdder<ShoppingList> {
     ///      public ShoppingListElementAdder(ShoppingList shoppingList) {
     ///          Object = shoppingList;
@@ -43,7 +43,7 @@ namespace Unity.VisualScripting.ReorderableList.Element_Adder_Menu
     ///      }
     ///  }
     ///  ]]></code>
-    ///     <code language="unityscript"><![CDATA[
+    ///     <code lang="unityscript"><![CDATA[
     ///  public class ShoppingListElementAdder extends IElementAdder.<ShoppingList> {
     ///      var _object:ShoppingList;
     ///

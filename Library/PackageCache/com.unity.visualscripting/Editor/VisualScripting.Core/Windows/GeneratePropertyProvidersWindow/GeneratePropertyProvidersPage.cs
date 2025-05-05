@@ -17,7 +17,7 @@ namespace Unity.VisualScripting
         {
             GUILayout.BeginVertical(Styles.background, GUILayout.ExpandHeight(true));
 
-            var label = "Inspectors in Bolt plugins can handle many custom types besides Unity primites and objects. ";
+            var label = "Inspectors in Bolt plugins can handle many custom types besides Unity primitives and objects. ";
             label += "However, to be compatible with your custom editor drawers, some additional property provider scripts must be generated. ";
 
             LudiqGUI.FlexibleSpace();

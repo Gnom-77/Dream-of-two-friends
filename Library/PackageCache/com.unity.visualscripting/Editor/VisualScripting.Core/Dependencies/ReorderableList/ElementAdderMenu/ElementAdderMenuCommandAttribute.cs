@@ -15,7 +15,7 @@ namespace Unity.VisualScripting.ReorderableList.Element_Adder_Menu
     ///     The following source code demonstrates how to add a helper menu command to
     ///     the add element menu of a shopping list:
     ///     </para>
-    ///     <code language="csharp"><![CDATA[
+    ///     <code lang="csharp"><![CDATA[
     ///  [ElementAdderMenuCommand(typeof(ShoppingItem))]
     ///  public class AddFavoriteShoppingItemsCommand : IElementAdderMenuCommand<ShoppingList> {
     ///      public AddFavoriteShoppingItemsCommand() {
@@ -32,7 +32,7 @@ namespace Unity.VisualScripting.ReorderableList.Element_Adder_Menu
     ///      }
     ///  }
     ///  ]]></code>
-    ///     <code language="unityscript"><![CDATA[
+    ///     <code lang="unityscript"><![CDATA[
     ///  @ElementAdderMenuCommand(ShoppingItem)
     ///  class AddFavoriteShoppingItemsCommand extends IElementAdderMenuCommand.<ShoppingList> {
     ///      var _content:GUIContent = new GUIContent('Add Favorite Items');

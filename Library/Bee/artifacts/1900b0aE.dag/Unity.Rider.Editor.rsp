@@ -393,6 +393,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.29f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Library/PackageCache/com.unity.ide.rider/Rider/Editor/Discovery.cs"
 "Library/PackageCache/com.unity.ide.rider/Rider/Editor/EditorPluginInterop.cs"
+"Library/PackageCache/com.unity.ide.rider/Rider/Editor/LogFileOpener.cs"
 "Library/PackageCache/com.unity.ide.rider/Rider/Editor/LoggingLevel.cs"
 "Library/PackageCache/com.unity.ide.rider/Rider/Editor/PluginSettings.cs"
 "Library/PackageCache/com.unity.ide.rider/Rider/Editor/PostProcessors/RiderAssetPostprocessor.cs"
@@ -431,6 +432,7 @@
 "Library/PackageCache/com.unity.ide.rider/Rider/Editor/Util/SerializableVersion.cs"
 "Library/PackageCache/com.unity.ide.rider/Rider/Editor/Util/StringBuilderExtensions.cs"
 "Library/PackageCache/com.unity.ide.rider/Rider/Editor/Util/StringUtils.cs"
+"Library/PackageCache/com.unity.ide.rider/Rider/Editor/Util/UnityVersionUtils.cs"
 -langversion:9.0
 /deterministic
 /optimize+

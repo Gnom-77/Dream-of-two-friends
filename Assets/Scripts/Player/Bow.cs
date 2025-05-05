@@ -11,8 +11,14 @@ public class Bow : MonoBehaviour
     [SerializeField] private float _arrowSpeed = 12f;
     [Header("Trajectory projection")]
     [SerializeField] private GameObject _point;
+    [SerializeField] private Transform _pointsContainer;
     [SerializeField] private int _numberOfPoints;
     [SerializeField] private float _spaceBetweenPoints;
+    [Space(10)]
+    [Header("Hidden elements")]
+    [SerializeField] private GameObject[] _elementsAiming;
+    [SerializeField] private GameObject[] _defaultElements;
+
     private GameObject[] _points;
 
     private ObjectPoolManager _pool;
@@ -25,14 +31,16 @@ public class Bow : MonoBehaviour
         _points = new GameObject[_numberOfPoints];
         for (int i = 0; i < _numberOfPoints; i++)
         {
-            _points[i] = Instantiate(_point, _bowPosition.position, Quaternion.identity);
+            _points[i] = Instantiate(_point, _bowPosition.position, Quaternion.identity, _pointsContainer);
         }
+        OnDefaultState();
     }
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.K))
+        if (Input.GetKey(KeyCode.K) && _playerMovement.CheckGrounding())
         {
+            OnAiming();
             PlayerInput();
             _isAiming = true;
             _playerMovement.SetAiming(_isAiming);
@@ -44,6 +52,7 @@ public class Bow : MonoBehaviour
         }
         else
         {
+            OnDefaultState();
             _isAiming = false;
             _playerMovement.SetAiming(_isAiming);
             SetDefaultPosition();
@@ -95,5 +104,29 @@ public class Bow : MonoBehaviour
     private void SetDefaultPosition()
     {
         _handPosition.localEulerAngles = new Vector3(_handPosition.localEulerAngles.x, _handPosition.localEulerAngles.y, 0);
+    }
+
+    private void OnAiming()
+    {
+        foreach (var item in _elementsAiming)
+        {
+            item.gameObject.SetActive(true);
+        }
+        foreach (var item in _defaultElements)
+        {
+            item.gameObject.SetActive(false);
+        }
+    }
+
+    private void OnDefaultState()
+    {
+        foreach (var item in _elementsAiming)
+        {
+            item.SetActive(false);
+        }
+        foreach (var item in _defaultElements)
+        {
+            item.SetActive(true);
+        }
     }
 }

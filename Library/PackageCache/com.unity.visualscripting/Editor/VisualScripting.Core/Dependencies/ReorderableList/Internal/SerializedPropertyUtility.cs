@@ -105,7 +105,7 @@ namespace Unity.VisualScripting.ReorderableList.Internal
         }
 
         /// <summary>
-        /// Copies value of <paramref name="sourceProperty" /> into <pararef name="destProperty" />.
+        /// Copies value of <paramref name="sourceProperty" /> into <paramref name="destProperty" />.
         /// </summary>
         /// <param name="destProperty">Destination property.</param>
         /// <param name="sourceProperty">Source property.</param>

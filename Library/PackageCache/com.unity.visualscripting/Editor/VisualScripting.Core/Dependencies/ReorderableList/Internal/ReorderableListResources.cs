@@ -7,7 +7,6 @@ using UnityEngine;
 
 namespace Unity.VisualScripting.ReorderableList.Internal
 {
-    /// <exclude />
     public enum ReorderableListTexture
     {
         Icon_Add_Normal = 0,
@@ -31,7 +30,6 @@ namespace Unity.VisualScripting.ReorderableList.Internal
     /// <summary>
     /// Resources to assist with reorderable list control.
     /// </summary>
-    /// <exclude />
     public static class ReorderableListResources
     {
         static ReorderableListResources()
@@ -103,8 +101,8 @@ namespace Unity.VisualScripting.ReorderableList.Internal
         /// <summary>
         /// Gets light or dark version of the specified texture.
         /// </summary>
-        /// <param name="name"></param>
-        /// <returns></returns>
+        /// <param name="name">Texture name</param>
+        /// <returns>Light or dark version of the specified texture</returns>
         public static Texture2D GetTexture(ReorderableListTexture name)
         {
             return s_Cached[(int)name];

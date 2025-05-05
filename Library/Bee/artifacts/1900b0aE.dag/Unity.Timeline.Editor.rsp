@@ -529,6 +529,7 @@
 "Library/PackageCache/com.unity.timeline/Editor/Recording/TimelineRecording_Monobehaviour.cs"
 "Library/PackageCache/com.unity.timeline/Editor/Recording/TimelineRecording_PlayableAsset.cs"
 "Library/PackageCache/com.unity.timeline/Editor/Recording/TrackAssetRecordingExtensions.cs"
+"Library/PackageCache/com.unity.timeline/Editor/Samples/SampleDependencyImporter.cs"
 "Library/PackageCache/com.unity.timeline/Editor/Shortcuts.cs"
 "Library/PackageCache/com.unity.timeline/Editor/Signals/SignalAssetInspector.cs"
 "Library/PackageCache/com.unity.timeline/Editor/Signals/SignalEmitterEditor.cs"

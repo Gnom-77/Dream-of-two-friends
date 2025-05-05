@@ -2,26 +2,26 @@
   "name": "com.unity.ide.rider",
   "displayName": "JetBrains Rider Editor",
   "description": "The JetBrains Rider Editor package provides an integration for using the JetBrains Rider IDE as a code editor for Unity. It adds support for generating .csproj files for code completion and auto-discovery of installations.",
-  "version": "3.0.31",
-  "unity": "2019.2",
+  "version": "3.0.36",
+  "unity": "2019.4",
   "unityRelease": "6f1",
   "dependencies": {
     "com.unity.ext.nunit": "1.0.6"
   },
   "relatedPackages": {
-    "com.unity.ide.rider.tests": "3.0.31"
+    "com.unity.ide.rider.tests": "3.0.36"
   },
   "_upm": {
-    "changelog": "fix RIDER-104519 Rider is reporting errors in scripts that work fine in Unity when utilizing DOTS - when Player project, by generating projects for all assemblies in \"com.unity.entities\", \"com.unity.collections\"\nfix RIDER-111622 Unity Rider package is not compatible with Rider Dev builds"
+    "changelog": "- fix RIDER-124592 Avoid affecting \"Strip Engine Code\" while IL2CPP debug enabled"
   },
   "upmCi": {
-    "footprint": "b575d2acd4f31d85999e18d8204f19ec61b9c179"
+    "footprint": "0f5f7817a54759523be87e8d6b6c95abc8e313d3"
   },
   "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html",
   "repository": {
     "url": "https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git",
     "type": "git",
-    "revision": "ccd778a2275ff09f1a83bc924cfb2fb4d5b63566"
+    "revision": "b5315083ab3861d21f6ab2ed0d9514daf04bf208"
   },
-  "_fingerprint": "7921be93db40ec070fcb01ed82d1c3df1bbdddcd"
+  "_fingerprint": "4d374c7eb6db6907c7e6925e3086c3c73f926e13"
 }

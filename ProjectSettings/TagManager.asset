@@ -62,8 +62,14 @@ TagManager:
   - name: Front Platform
     uniqueID: 2640875225
     locked: 0
+  - name: Arrow
+    uniqueID: 2711490911
+    locked: 0
   - name: Foreground
     uniqueID: 100115515
+    locked: 0
+  - name: UI
+    uniqueID: 3922371807
     locked: 0
   m_RenderingLayers:
   - Default

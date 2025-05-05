@@ -68,12 +68,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        _animator.SetFloat("Run", Mathf.Abs(_directionOfMovement));
         if (_isAiming)
         {
             _directionOfMovement = 0;
             return;
         }
-
         _directionOfMovement = HorizontalDirection();
         CoyoteTime();
         JumpBuffer();
@@ -96,7 +96,6 @@ public class PlayerMovement : MonoBehaviour
     private int HorizontalDirection()
     {
         float pressMoveButton = Input.GetAxisRaw(_horizontalButtonName);
-        _animator.SetFloat("Run", Mathf.Abs(pressMoveButton));
         if (pressMoveButton > 0)
         {
             if (!_isFacingRight)
@@ -195,7 +194,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    private bool CheckGrounding()
+    public bool CheckGrounding()
     {
         bool isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundMask);
 
