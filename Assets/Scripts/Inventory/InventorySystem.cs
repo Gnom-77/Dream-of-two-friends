@@ -51,7 +51,7 @@ public class InventorySystem : MonoBehaviour
                 Inventory.Remove(value);
                 _itemDictionary.Remove(referenceData);
             }
-            //OnInventoryChanged();
+            OnInventoryChanged();
         }
     }
 

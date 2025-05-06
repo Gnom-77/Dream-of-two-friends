@@ -5,10 +5,66 @@
             "entries": [
                 {
                     "character": [
-                        "Ведьма",
+                        "Принц",
                         "Neutral"
                     ],
-                    "text": "Привет, давно не виделись, как дела?",
+                    "text": "Доброе утро. Дай угадаю, ты снова читала те старые книги?",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": null,
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                },
+                {
+                    "character": [
+                        "Маленькая Ведьма",
+                        "Neutral"
+                    ],
+                    "text": "Привет! Это не просто старые книги, а древние СВИТКИ! В них сокрыты рецепты уникальных зелий и одно из них я хочу сварить.",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": null,
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                },
+                {
+                    "character": [
+                        "Маленькая Ведьма",
+                        "Neutral"
+                    ],
+                    "text": "Вот только проблема в том, что мне не хватает нескольких ингридиентов… Корень полуночной розы, лепестки синей архидеи и плод жёлтого дерева.",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": "end_dialog",
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                },
+                {
+                    "character": [
+                        "Принц",
+                        "Neutral"
+                    ],
+                    "text": "Звучит… аппетитно. И где ты собираешься всё это искать?",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": null,
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                },
+                {
+                    "character": [
+                        "Маленькая Ведьма",
+                        "Neutral"
+                    ],
+                    "text": "В лесу, конечно. Но одна я не справлюсь. Мама говорит, что лес не самое безопасное место.",
                     "go_to": [],
                     "options": [],
                     "wait_seconds": null,
@@ -22,7 +78,7 @@
                         "Принц",
                         "Neutral"
                     ],
-                    "text": "Все хорошо, пойдем гулять!",
+                    "text": "Тогда тебе точно нужен кто-то сильный и с отличным обаянием. Думаю тебе повезло, ведь у меня сегодня свободный день и я помогу тебе!",
                     "go_to": [],
                     "options": [],
                     "wait_seconds": null,
@@ -33,10 +89,38 @@
                 },
                 {
                     "character": [
-                        "Ведьма",
+                        "Маленькая Ведьма",
                         "Neutral"
                     ],
-                    "text": "Отличная идея, пошли!",
+                    "text": "А ты не испугаешься лесных монстров?",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": null,
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                },
+                {
+                    "character": [
+                        "Принц",
+                        "Neutral"
+                    ],
+                    "text": "Хах, монстры? Вот если бы ты сказала, что там ведьмы, то я бы задумался…",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": null,
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                },
+                {
+                    "character": [
+                        "Маленькая Ведьма",
+                        "Neutral"
+                    ],
+                    "text": "Очень смешно. Ладно, пошли. Мы должны успеть до заката.",
                     "go_to": [],
                     "options": [],
                     "wait_seconds": null,
@@ -48,14 +132,14 @@
             ]
         },
         {
-            "dialogue_name": "Next dialog",
+            "dialogue_name": "Dialogue with the guard",
             "entries": [
                 {
                     "character": [
-                        "Witch",
+                        "Стражник",
                         "Neutral"
                     ],
-                    "text": "Hi, it's been a while, how are you?",
+                    "text": "Стойте. Ворота закрыты.",
                     "go_to": [],
                     "options": [],
                     "wait_seconds": null,
@@ -66,35 +150,52 @@
                 },
                 {
                     "character": [
-                        "Prince",
+                        "Принц",
                         "Neutral"
                     ],
-                    "text": "i, everything is fine, let's go for a walk!",
-                    "go_to": [
-                        "First",
-                        "End"
-                    ],
-                    "options": [
-                        "Don't you want to play?",
-                        "Bye"
-                    ],
+                    "text": "Почему? Ведь уже утро. Они точно должны быть открыты.",
+                    "go_to": [],
+                    "options": [],
                     "wait_seconds": null,
                     "function": null,
                     "if_condition": null,
                     "add": null,
                     "dialogue_type": null
-                }
-            ]
-        },
-        {
-            "dialogue_name": "First",
-            "entries": [
+                },
                 {
                     "character": [
-                        "Prince",
+                        "Маленькая Ведьма",
                         "Neutral"
                     ],
-                    "text": "Yes, let's play!",
+                    "text": "Нам нужно в лес, за ингридиентами. Без них я не смогу сварить зелья.",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": null,
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                },
+                {
+                    "character": [
+                        "Стражник",
+                        "Neutral"
+                    ],
+                    "text": "Я бы и рад вас пропустить… но ключи от ворот я потерял. Я проверил почти всё, кроме той башни. Если вы их найдёте, я открою вам ворота.",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": null,
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                },
+                {
+                    "character": [
+                        "Принц",
+                        "Neutral"
+                    ],
+                    "text": "Хорошо, мы найдём их! ",
                     "go_to": [],
                     "options": [],
                     "wait_seconds": null,
@@ -106,14 +207,80 @@
             ]
         },
         {
-            "dialogue_name": "End",
+            "dialogue_name": "Dialogue with a guard without keys ",
             "entries": [
                 {
                     "character": [
-                        "Prince",
+                        "Стражник",
                         "Neutral"
                     ],
-                    "text": "Bye",
+                    "text": "Ну что, нашли ключи?",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": null,
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                },
+                {
+                    "character": [
+                        "Принц",
+                        "Neutral"
+                    ],
+                    "text": "Ещё нет.",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": "end_dialog",
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                }
+            ]
+        },
+        {
+            "dialogue_name": "Dialogue with a guard with keys ",
+            "entries": [
+                {
+                    "character": [
+                        "Стражник",
+                        "Neutral"
+                    ],
+                    "text": "Ооо, вы нашли их!",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": null,
+                    "if_condition": "key",
+                    "add": null,
+                    "dialogue_type": null
+                },
+                {
+                    "character": [
+                        "Стражник",
+                        "Neutral"
+                    ],
+                    "text": "Сейчас я открою вам ворота.",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": "end_dialog",
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                }
+            ]
+        },
+        {
+            "dialogue_name": "Final Dialogue",
+            "entries": [
+                {
+                    "character": [
+                        "Стражник",
+                        "Neutral"
+                    ],
+                    "text": "Удачи вам.",
                     "go_to": [],
                     "options": [],
                     "wait_seconds": null,

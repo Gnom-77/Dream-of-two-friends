@@ -456,6 +456,8 @@
 "Assets/Scripts/Player/SavedNextSpawnPoint.cs"
 "Assets/Scripts/Player/Shield.cs"
 "Assets/Scripts/Player/Spawn Position.cs"
+"Assets/Scripts/Quests/FindeKey.cs"
+"Assets/Scripts/Quests/Key.cs"
 -langversion:9.0
 /deterministic
 /optimize+

@@ -14,7 +14,8 @@ public class DialogueManager : MonoBehaviour
 
     [Space, Header("Character Icon")]
     [SerializeField] private CharactersIcons _charactersIcons;
-
+    [Space, Header("Timer before dialogue")]
+    [SerializeField] private float _timeBeforeNextDialogue = 1.0f;
 
 
     private static DialogueManager _instance;
@@ -22,6 +23,7 @@ public class DialogueManager : MonoBehaviour
     private DialoguesData _dialoguesData;
     private int _dialogueListIndex;
     Dialogue _currentDialogue;
+    private float _timer = 0f;
 
     private void Awake()
     {
@@ -48,9 +50,13 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K) && _dialogueIsPlaying)
+        if (Input.GetKeyDown(KeyCode.K) && _dialogueIsPlaying && _timer <= 0)
         {
             Next();
+        }
+        else
+        {
+            Timer();
         }
     }
     public void EnterDialogueMode(TextAsset dialogueJSON, string dialogueName)
@@ -60,6 +66,7 @@ public class DialogueManager : MonoBehaviour
         bool containsItem = _dialoguesData.dialogues.Any(item => item.dialogue_name == dialogueName);
         if (containsItem)
         {
+            _timer = _timeBeforeNextDialogue;
             _dialogueListIndex = 0;
             _currentDialogue = _dialoguesData.dialogues.Where(item => item.dialogue_name == dialogueName).FirstOrDefault();
             Show();
@@ -112,5 +119,10 @@ public class DialogueManager : MonoBehaviour
         _dialogueIsPlaying = false;
         _dialoguePanel.SetActive(false);
     }    
+
+    private void Timer()
+    {
+        _timer -= Time.deltaTime;
+    }
 
 }

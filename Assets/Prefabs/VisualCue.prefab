@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VisualCue
       objectReference: {fileID: 0}
+    - target: {fileID: -8653719598885068355, guid: 4a67e18445e9c8b4c823108f595bb4cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 4a67e18445e9c8b4c823108f595bb4cf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.204018

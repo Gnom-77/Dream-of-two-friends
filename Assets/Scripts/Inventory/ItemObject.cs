@@ -10,7 +10,7 @@ public class ItemObject : MonoBehaviour
         if (((1 << _mask) & other.gameObject.layer) !=0)
         {
             InventorySystem.current.Add(_referenceItem);
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
 }
