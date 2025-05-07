@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : Sounds
 {
     [SerializeField] private PlayerNumber _playerNumber = new();
     [Header("Movement Settings")]
@@ -69,6 +69,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         _animator.SetFloat("Run", Mathf.Abs(_directionOfMovement));
+
         if (_isAiming)
         {
             _directionOfMovement = 0;
@@ -181,6 +182,8 @@ public class PlayerMovement : MonoBehaviour
             _isJump = false;
 
             _animator.SetBool("IsJumping", true);
+            PlaySound(0);
+
             _isLanding = false;
         }
         if (_isSmallJump)
@@ -188,7 +191,8 @@ public class PlayerMovement : MonoBehaviour
             _playerRb2D.linearVelocity = new Vector2(_playerRb2D.linearVelocity.x, _playerRb2D.linearVelocity.y * 0.5f);
             _isSmallJump = false;
 
-            _animator.SetBool("IsJumping", true);
+            //_animator.SetBool("IsJumping", true);
+            //PlaySound(0);
             _isLanding = false;
         }
     }
@@ -301,6 +305,7 @@ public class PlayerMovement : MonoBehaviour
         {
             _isLanding = true;
             _animator.SetBool("IsJumping", false);
+            PlaySound(1);
         }
     }
 
@@ -311,5 +316,14 @@ public class PlayerMovement : MonoBehaviour
             Gizmos.color = Color.blue;
             Gizmos.DrawWireSphere(_groundCheck.position, _groundCheckRadius);
         }
+    }
+
+    private void OnDisable()
+    {
+        _directionOfMovement = 0;
+        _playerRb2D.linearVelocity = Vector2.zero;
+        _animator.SetFloat("Run", _directionOfMovement);
+        _animator.SetBool("IsJumping", false);
+        PlaySound(0);
     }
 }

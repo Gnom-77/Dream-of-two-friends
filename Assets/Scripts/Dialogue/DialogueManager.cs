@@ -16,6 +16,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private CharactersIcons _charactersIcons;
     [Space, Header("Timer before dialogue")]
     [SerializeField] private float _timeBeforeNextDialogue = 1.0f;
+    [Space, Header("Block alements then start dialogue")]
+    [SerializeField] private MonoBehaviour[] _blockAlementsThenDialogue;
 
 
     private static DialogueManager _instance;
@@ -69,6 +71,7 @@ public class DialogueManager : MonoBehaviour
             _timer = _timeBeforeNextDialogue;
             _dialogueListIndex = 0;
             _currentDialogue = _dialoguesData.dialogues.Where(item => item.dialogue_name == dialogueName).FirstOrDefault();
+            BlockAlements();
             Show();
         }
         else
@@ -93,6 +96,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
+            UnBlockAlements();
             Close();
         }
     }
@@ -125,4 +129,24 @@ public class DialogueManager : MonoBehaviour
         _timer -= Time.deltaTime;
     }
 
+    private void BlockAlements()
+    {
+        if (_blockAlementsThenDialogue != null)
+        {
+            foreach (var item in _blockAlementsThenDialogue)
+            {
+                item.enabled = false;
+            }
+        }
+    }
+    private void UnBlockAlements()
+    {
+        if (_blockAlementsThenDialogue != null)
+        {
+            foreach (var item in _blockAlementsThenDialogue)
+            {
+                item.enabled = true;
+            }
+        }
+    }
 }

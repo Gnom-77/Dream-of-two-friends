@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\ObjectPool\ObjectPoolManager.cs" />
     <Compile Include="Assets\Scripts\Player\Spawn Position.cs" />
     <Compile Include="Assets\Scripts\Door\Door.cs" />
+    <Compile Include="Assets\Scripts\Sounds\Sounds.cs" />
     <Compile Include="Assets\Scripts\Player\Shield.cs" />
     <Compile Include="Assets\Scripts\Quests\Key.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenuButton.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="Assets\Scripts\Flying Broom\BroomMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Inventory\UIInventoryItemSlot.cs" />
+    <Compile Include="Assets\Scripts\Sounds\SoundArrays.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
