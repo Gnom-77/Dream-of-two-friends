@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 public class MainMenuButton : MonoBehaviour
 {
     [SerializeField] private SavedNextSpawnPoint _nextSpawnPoint;
+    [SerializeField] private GameObject _settingsMenu;
+    [SerializeField] private GameObject _mainMenu;
+
     public void NewGame()
     {
         _nextSpawnPoint.DoorIndex = 0;
@@ -15,9 +18,22 @@ public class MainMenuButton : MonoBehaviour
         Debug.Log("Is Continue");
     }
 
-    public void Options()
+
+    public void MainMenuFromSettings()
     {
-        Debug.Log("Is Options");
+        _settingsMenu.SetActive(false);
+        _mainMenu.SetActive(true);
+    }
+
+    public void SettingsFromMainMenu()
+    {
+        _settingsMenu.SetActive(true);
+        _mainMenu.SetActive(false);
+    }
+
+    public void OpenMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void Exit()

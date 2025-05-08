@@ -160,12 +160,12 @@ public class PlayerMovement : Sounds
 
     private void Movement()
     {
-        if(_isGrounded && !_isOnSlope && !_isJump)
+        if (_isGrounded && !_isOnSlope && !_isJump)
         {
             _targetVelocity.Set(_horizontalSpeed * _directionOfMovement, 0.0f);
             _playerRb2D.linearVelocity = _targetVelocity;
         }
-        else if(_isGrounded && _isOnSlope && _canWalkOnSlope && !_isJump)
+        else if (_isGrounded && _isOnSlope && _canWalkOnSlope && !_isJump)
         {
             _targetVelocity.Set(_horizontalSpeed * _slopeNormalPerp.x * -_directionOfMovement, _horizontalSpeed * _slopeNormalPerp.y * -_directionOfMovement);
             _playerRb2D.linearVelocity = _targetVelocity;
@@ -183,8 +183,6 @@ public class PlayerMovement : Sounds
 
             _animator.SetBool("IsJumping", true);
             PlaySound(0);
-
-            _isLanding = false;
         }
         if (_isSmallJump)
         {
@@ -193,7 +191,6 @@ public class PlayerMovement : Sounds
 
             //_animator.SetBool("IsJumping", true);
             //PlaySound(0);
-            _isLanding = false;
         }
     }
 
@@ -307,6 +304,17 @@ public class PlayerMovement : Sounds
             _animator.SetBool("IsJumping", false);
             PlaySound(1);
         }
+        else if (_isLanding != false && !CheckGrounding())
+        {
+            _isLanding = false;
+        }
+    }
+    private void PlayRunSound()
+    {
+
+        PlaySound(2);
+        if (!CheckGrounding() || _directionOfMovement == 0)
+            StopSound();
     }
 
     private void OnDrawGizmos()
@@ -324,6 +332,5 @@ public class PlayerMovement : Sounds
         _playerRb2D.linearVelocity = Vector2.zero;
         _animator.SetFloat("Run", _directionOfMovement);
         _animator.SetBool("IsJumping", false);
-        PlaySound(0);
     }
 }

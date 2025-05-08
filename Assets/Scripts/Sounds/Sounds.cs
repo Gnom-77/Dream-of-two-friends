@@ -22,9 +22,9 @@ public class Sounds : MonoBehaviour
             _audioSource.PlayOneShot(clip, volume);
         }
     }
-    //public void StopSound(int index)
-    //{
-    //    AudioClip clip = _sounds[index];
-    //    _audioSource.Stop(clip);
-    //}
+    public void StopSound()
+    {
+        _audioSource.Stop();
+    }
+
 }
