@@ -7,13 +7,12 @@ public class ShowMenuInGame : MonoBehaviour
     private bool _isActive;
     void Start()
     {
-        _mainMenu.SetActive(false);
-        _isActive = false;
+        CloseMenu();
     }
 
     void Update()
     {
-        if (!_isActive && Input.GetKeyDown(KeyCode.Escape))
+        if (!_isActive && Input.GetKeyDown(KeyCode.Escape) && !DialogueManager.GetInstance().GetDialogueIsPlaying())
         {
             OpenMenu();
         }
@@ -26,12 +25,15 @@ public class ShowMenuInGame : MonoBehaviour
     {
         _mainMenu.SetActive(true);
         _isActive = true;
+        Time.timeScale = 0.0f;
+
     }
 
     public void CloseMenu()
     {
         _mainMenu.SetActive(false);
         _isActive = false;
+        Time.timeScale = 1.0f;
     }
 
 }

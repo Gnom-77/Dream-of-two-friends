@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Inventory\ItemObject.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\Camera\MapTransation.cs" />
     <Compile Include="Assets\Scripts\Inventory\UIInventoryManager.cs" />
     <Compile Include="Assets\Scripts\Player\SavedNextSpawnPoint.cs" />
     <Compile Include="Assets\Scripts\ObjectPool\ObjectPool.cs" />

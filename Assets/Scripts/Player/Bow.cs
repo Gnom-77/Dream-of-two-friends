@@ -38,27 +38,30 @@ public class Bow : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.K) && _playerMovement.CheckGrounding())
+        if (Time.timeScale != 0)
         {
-            OnAiming();
-            PlayerInput();
-            _isAiming = true;
-            _playerMovement.SetAiming(_isAiming);
-            for (int i = 0; i < _numberOfPoints; i++)
+            if (Input.GetKey(KeyCode.K) && _playerMovement.CheckGrounding())
             {
-                _points[i].SetActive(true);
-                _points[i].transform.position = PointPosition(i * _spaceBetweenPoints);
+                OnAiming();
+                PlayerInput();
+                _isAiming = true;
+                _playerMovement.SetAiming(_isAiming);
+                for (int i = 0; i < _numberOfPoints; i++)
+                {
+                    _points[i].SetActive(true);
+                    _points[i].transform.position = PointPosition(i * _spaceBetweenPoints);
+                }
             }
-        }
-        else
-        {
-            OnDefaultState();
-            _isAiming = false;
-            _playerMovement.SetAiming(_isAiming);
-            SetDefaultPosition();
-            for (int i = 0; i < _numberOfPoints; i++)
+            else
             {
-                _points[i].SetActive(false);
+                OnDefaultState();
+                _isAiming = false;
+                _playerMovement.SetAiming(_isAiming);
+                SetDefaultPosition();
+                for (int i = 0; i < _numberOfPoints; i++)
+                {
+                    _points[i].SetActive(false);
+                }
             }
         }
     }

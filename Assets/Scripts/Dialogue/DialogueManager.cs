@@ -11,6 +11,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Image _dialogueIcon;
     [SerializeField] private TextMeshProUGUI _dialogueTitle;
     [SerializeField] private TextMeshProUGUI _dialogueText;
+    [SerializeField] private GameObject _dialogueContinueIcon;
 
     [Space, Header("Character Icon")]
     [SerializeField] private CharactersIcons _charactersIcons;
@@ -85,6 +86,7 @@ public class DialogueManager : MonoBehaviour
         
         _dialogueIsPlaying = true;
         _dialoguePanel.SetActive(true);
+        _dialogueContinueIcon.SetActive(true);
         ChangeText();
     }
 
@@ -98,6 +100,10 @@ public class DialogueManager : MonoBehaviour
         {
             UnBlockAlements();
             Close();
+        }
+        if (_dialogueIsPlaying && (_dialogueListIndex == _currentDialogue.entries.Count))
+        {
+            _dialogueContinueIcon.SetActive(false);
         }
     }
 
@@ -148,5 +154,10 @@ public class DialogueManager : MonoBehaviour
                 item.enabled = true;
             }
         }
+    }
+
+    public bool GetDialogueIsPlaying()
+    {
+        return _dialogueIsPlaying;
     }
 }
