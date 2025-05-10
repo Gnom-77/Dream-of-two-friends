@@ -2237,7 +2237,7 @@ Transform:
   m_GameObject: {fileID: 558260235}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.889582, y: 6.6115623, z: -13.32}
+  m_LocalPosition: {x: -13.556758, y: 6.611956, z: -13.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3658,7 +3658,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 55.2, y: 17}
+  m_AnchoredPosition: {x: 55.19995, y: 17}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &813631250
@@ -3899,7 +3899,7 @@ PolygonCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
@@ -5349,9 +5349,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8022323066870681050, guid: 6273afac5e483394eba38eae3106a9b3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2030557576}
+    - targetCorrespondingSourceObject: {fileID: -8022323066870681050, guid: 6273afac5e483394eba38eae3106a9b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2030557578}
     - targetCorrespondingSourceObject: {fileID: 3113031937620758771, guid: 6273afac5e483394eba38eae3106a9b3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 898924711}
+    - targetCorrespondingSourceObject: {fileID: 3113031937620758771, guid: 6273afac5e483394eba38eae3106a9b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1587402390}
     - targetCorrespondingSourceObject: {fileID: -3706629389861722530, guid: 6273afac5e483394eba38eae3106a9b3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1641113626}
@@ -5884,7 +5890,7 @@ Transform:
   m_GameObject: {fileID: 1092791487}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.889582, y: 6.6115623, z: -3.32}
+  m_LocalPosition: {x: -13.556758, y: 6.611956, z: -3.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8169,6 +8175,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9024115712334923537, guid: 800f325ba75c10a4bbb7bfbd15a15e64, type: 3}
   m_PrefabInstance: {fileID: 1974619431}
   m_PrefabAsset: {fileID: 0}
+--- !u!251 &1587402390
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063969888}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 45
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 80
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1599661539
 GameObject:
   m_ObjectHideFlags: 0
@@ -10565,7 +10590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 800f325ba75c10a4bbb7bfbd15a15e64, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.82
+      value: -11.16
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 800f325ba75c10a4bbb7bfbd15a15e64, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12135,7 +12160,7 @@ PolygonCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
@@ -12159,6 +12184,25 @@ PolygonCollider2D:
       - {x: 1.4599999, y: -1.29}
       - {x: -0.39999998, y: 0.56}
   m_UseDelaunayMesh: 0
+--- !u!251 &2030557578
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063969889}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: -45
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 80
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &2088809010
 GameObject:
   m_ObjectHideFlags: 0

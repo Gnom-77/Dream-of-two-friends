@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2553706076304722900}
   - component: {fileID: 1395687691145159446}
   - component: {fileID: 6877510719781837662}
+  - component: {fileID: 8641329107077462860}
   m_Layer: 6
   m_Name: Arrow_1
   m_TagString: Untagged
@@ -123,7 +124,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.065707326, y: 0.004999999}
@@ -183,6 +184,7 @@ MonoBehaviour:
   _groundTagName: Ground
   _lifeTime: 7
   _invulnerabilityArrowTime: 0.02
+  _princeTag: Player One
 --- !u!114 &6877510719781837662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,6 +198,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidBody2D: {fileID: 2553706076304722900}
+--- !u!251 &8641329107077462860
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427729708223414587}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 100
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &9215209411682309083
 GameObject:
   m_ObjectHideFlags: 0

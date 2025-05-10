@@ -10,6 +10,7 @@ public class Arrow : MonoBehaviour
     [SerializeField] private string _groundTagName;
     [SerializeField] private float _lifeTime = 5f;
     [SerializeField] private float _invulnerabilityArrowTime = 0.5f;
+    [SerializeField] private string _princeTag;
 
     private ObjectPool _poolObject;
     private int _groundAndWallLayerMask;
@@ -48,6 +49,14 @@ public class Arrow : MonoBehaviour
                 _arrowColl2D.enabled = true;
                 _arrowRb2D.constraints = RigidbodyConstraints2D.FreezeAll;
             }
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag(_princeTag) && collision.transform.position.y >= gameObject.transform.position.y)
+        {
+            HideAndReturnToPoolArrow();
         }
     }
 
