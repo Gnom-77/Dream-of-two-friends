@@ -52,14 +52,6 @@ public class Arrow : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag(_princeTag) && collision.transform.position.y >= gameObject.transform.position.y)
-        {
-            HideAndReturnToPoolArrow();
-        }
-    }
-
     private IEnumerator Destroy()
     {
         yield return new WaitForSeconds(_lifeTime);

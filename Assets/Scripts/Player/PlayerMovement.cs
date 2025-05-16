@@ -7,6 +7,7 @@ public class PlayerMovement : Sounds
     [SerializeField] private Rigidbody2D _playerRb2D;
     [SerializeField] private CapsuleCollider2D _playerCollider;
     [SerializeField] private Transform _groundCheck;
+    [SerializeField] private Vector2 _groundCheckBoxSize = new Vector2(1f, 0.1f);
     [SerializeField] private float _horizontalSpeed;
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _slopeCheckDistance;
@@ -73,6 +74,7 @@ public class PlayerMovement : Sounds
         if (_isAiming)
         {
             _directionOfMovement = 0;
+            HorizontalDirection();
             return;
         }
         _directionOfMovement = HorizontalDirection();
@@ -197,9 +199,7 @@ public class PlayerMovement : Sounds
 
     public bool CheckGrounding()
     {
-        bool isGrounded = Physics2D.OverlapCircle(_groundCheck.position, _groundCheckRadius, _groundMask);
-
-        return isGrounded;
+        return Physics2D.OverlapBox(_groundCheck.position, _groundCheckBoxSize, 0f, _groundMask);
     }
 
     private void Flip()
@@ -322,7 +322,7 @@ public class PlayerMovement : Sounds
         if (_groundCheck)
         {
             Gizmos.color = Color.blue;
-            Gizmos.DrawWireSphere(_groundCheck.position, _groundCheckRadius);
+            Gizmos.DrawWireCube(_groundCheck.position, _groundCheckBoxSize);
         }
     }
 

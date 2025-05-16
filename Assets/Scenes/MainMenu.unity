@@ -613,15 +613,15 @@ PrefabInstance:
       objectReference: {fileID: 1746602483}
     - target: {fileID: 2304556944060666639, guid: cf365275d6d1d86499d3b867620990cf, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2304556944060666639, guid: cf365275d6d1d86499d3b867620990cf, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2304556944060666639, guid: cf365275d6d1d86499d3b867620990cf, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5167847735315849467, guid: cf365275d6d1d86499d3b867620990cf, type: 3}
       propertyPath: m_Pivot.x
@@ -717,11 +717,11 @@ PrefabInstance:
       objectReference: {fileID: 1746602483}
     - target: {fileID: 6951894286198356039, guid: cf365275d6d1d86499d3b867620990cf, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6951894286198356039, guid: cf365275d6d1d86499d3b867620990cf, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7156336860853701932, guid: cf365275d6d1d86499d3b867620990cf, type: 3}
       propertyPath: _slider

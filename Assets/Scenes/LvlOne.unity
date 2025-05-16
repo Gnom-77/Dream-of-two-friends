@@ -1268,7 +1268,7 @@ Transform:
   m_GameObject: {fileID: 365679964}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.1, z: 0}
+  m_LocalPosition: {x: 0, y: -1.453, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3914,13 +3914,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.4, y: 1.5699999}
+    - - {x: 1.45, y: 1.5699999}
       - {x: -1.4499999, y: -1.25}
       - {x: -1.4499999, y: -1.35}
       - {x: -1.27, y: -1.56}
       - {x: -1.1899999, y: -1.56}
       - {x: 1.4499999, y: 1.09}
-      - {x: 1.4499999, y: 1.5699999}
   m_UseDelaunayMesh: 0
 --- !u!1 &903999268 stripped
 GameObject:
@@ -7871,6 +7870,7 @@ MonoBehaviour:
   _playerRb2D: {fileID: 1528871674}
   _playerCollider: {fileID: 1528871671}
   _groundCheck: {fileID: 1793587146}
+  _groundCheckBoxSize: {x: 0.36, y: 0.04}
   _horizontalSpeed: 5
   _jumpForce: 7
   _slopeCheckDistance: 0.5
@@ -8190,7 +8190,7 @@ PlatformEffector2D:
   m_RotationalOffset: 45
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
-  m_SurfaceArc: 80
+  m_SurfaceArc: 90
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
@@ -9805,7 +9805,7 @@ Transform:
   m_GameObject: {fileID: 1793587145}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.1, z: 0}
+  m_LocalPosition: {x: 0, y: -1.453, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11341,6 +11341,7 @@ MonoBehaviour:
   _playerRb2D: {fileID: 1974619436}
   _playerCollider: {fileID: 1974619437}
   _groundCheck: {fileID: 365679965}
+  _groundCheckBoxSize: {x: 0.36, y: 0.04}
   _horizontalSpeed: 5
   _jumpForce: 7
   _slopeCheckDistance: 0.5
@@ -12175,8 +12176,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.43, y: 1.5699999}
-      - {x: -1.4599999, y: 1.5699999}
+    - - {x: -1.45, y: 1.57}
       - {x: -1.4599999, y: 1.04}
       - {x: 1.18, y: -1.56}
       - {x: 1.24, y: -1.56}
@@ -12199,7 +12199,7 @@ PlatformEffector2D:
   m_RotationalOffset: -45
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
-  m_SurfaceArc: 80
+  m_SurfaceArc: 90
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
