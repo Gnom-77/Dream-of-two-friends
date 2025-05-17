@@ -53,11 +53,11 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K) && _dialogueIsPlaying && _timer <= 0)
+        if ((Input.GetKeyDown(KeyCode.K) || Input.GetKeyDown(KeyCode.Keypad3)) && _dialogueIsPlaying && _timer <= 0)
         {
             Next();
         }
-        else
+        else if (_timer > 0)
         {
             Timer();
         }

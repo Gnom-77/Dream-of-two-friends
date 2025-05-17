@@ -7,7 +7,7 @@ public class PlayerMovement : Sounds
     [SerializeField] private Rigidbody2D _playerRb2D;
     [SerializeField] private CapsuleCollider2D _playerCollider;
     [SerializeField] private Transform _groundCheck;
-    [SerializeField] private Vector2 _groundCheckBoxSize = new Vector2(1f, 0.1f);
+    [SerializeField] private Vector2 _groundCheckBoxSize = new (1f, 0.1f);
     [SerializeField] private float _horizontalSpeed;
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _slopeCheckDistance;

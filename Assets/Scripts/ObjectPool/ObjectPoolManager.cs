@@ -72,13 +72,15 @@ public class ObjectPoolManager : MonoBehaviour
     public ObjectPool GetFreeElement(Vector3 position, Quaternion rotation)
     {
         ObjectPool element = GetFreeElement(position);
-        element.transform.rotation = rotation;
+        if (element != null)
+            element.transform.rotation = rotation;
         return element;
     }
     public ObjectPool GetFreeElement(Vector3 position)
     {
         ObjectPool element = GetFreeElement();
-        element.transform.position = position;
+        if (element != null)
+            element.transform.position = position;
         return element;
     }
 
@@ -93,6 +95,8 @@ public class ObjectPoolManager : MonoBehaviour
         {
             return CreateElement(true);
         }
+
+        return element;
 
         throw new Exception("Pool is over!");
     }

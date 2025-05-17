@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
@@ -17,6 +18,8 @@ public class DialogueTrigger : MonoBehaviour
     private bool _wasUsed;
     private bool _wasChanged;
     private bool _playerInRange;
+    private bool _isPlayerOne;
+    private bool _isPlayerTwo;
     private int _playerCounter;
 
     private void Awake()
@@ -45,6 +48,14 @@ public class DialogueTrigger : MonoBehaviour
             _playerCounter++;
             _wasUsed = true;
         }
+        if(collider.CompareTag("Player One"))
+        {
+            _isPlayerOne = true;
+        }
+        if(collider.CompareTag("Player Two"))
+        {
+            _isPlayerTwo = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collider)
@@ -68,12 +79,27 @@ public class DialogueTrigger : MonoBehaviour
             Destroy(this.gameObject);
         }
         _wasUsed = false;
+
+        if (collider.CompareTag("Player One"))
+        {
+            _isPlayerOne = false;
+        }
+        if (collider.CompareTag("Player Two"))
+        {
+            _isPlayerTwo = false;
+        }
     }
 
     private void Trigger()
     {
-        if (_playerInRange && Input.GetKeyDown(KeyCode.K))
-        {   
+        if (_playerInRange && _isPlayerOne && Input.GetKeyDown(KeyCode.K))
+        {
+            DialogueManager.GetInstance().EnterDialogueMode(_dialogsJSON, _dialogueName);
+            _wasUsed = true;
+            HideVisualCueAndSetPlayerInRange();
+        }
+        if (_playerInRange && _isPlayerTwo && Input.GetKeyDown(KeyCode.Keypad3))
+        {
             DialogueManager.GetInstance().EnterDialogueMode(_dialogsJSON, _dialogueName);
             _wasUsed = true;
             HideVisualCueAndSetPlayerInRange();

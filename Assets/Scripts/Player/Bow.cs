@@ -1,12 +1,15 @@
+using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 [RequireComponent(typeof(ObjectPoolManager))]
 public class Bow : MonoBehaviour
 {
-    [SerializeField] Transform _bowPosition;
-    [SerializeField] Transform _handPosition;
-    [SerializeField] PlayerMovement _playerMovement;
+    [SerializeField] private ObjectPoolManager _pool;
+    [SerializeField] private Transform _bowPosition;
+    [SerializeField] private Transform _handPosition;
+    [SerializeField] private PlayerMovement _playerMovement;
     [SerializeField] private float _rotationSpeed;
     [SerializeField] private float _arrowSpeed = 12f;
     [Header("Trajectory projection")]
@@ -18,16 +21,27 @@ public class Bow : MonoBehaviour
     [Header("Hidden elements")]
     [SerializeField] private GameObject[] _elementsAiming;
     [SerializeField] private GameObject[] _defaultElements;
+    [Space(10)]
+    [Header("Massage")]
+    [SerializeField] private GameObject _massageBox;
+    [SerializeField] private float _showTimeMassage;
 
     private GameObject[] _points;
 
-    private ObjectPoolManager _pool;
     private float _rotateDirection = 0;
     private bool _isAiming;
 
+    private void Awake()
+    {
+        _massageBox.SetActive(false);
+        if (_pool ==  null)
+        {
+            _pool = GetComponent<ObjectPoolManager>();
+        }
+    }
+
     private void Start()
     {
-        _pool = GetComponent<ObjectPoolManager>();
         _points = new GameObject[_numberOfPoints];
         for (int i = 0; i < _numberOfPoints; i++)
         {
@@ -66,6 +80,12 @@ public class Bow : MonoBehaviour
         }
     }
 
+    private void LateUpdate()
+    {
+        if (_massageBox.activeSelf)
+            _massageBox.transform.rotation = Quaternion.identity;
+    }
+
     private void FixedUpdate()
     {
         if(_isAiming)
@@ -74,12 +94,6 @@ public class Bow : MonoBehaviour
         }
     }
 
-    private void Shot()
-    {
-        ObjectPool arrow = _pool.GetFreeElement(_bowPosition.position, _bowPosition.rotation);
-        Rigidbody2D arrowRb2D = arrow.GetRigidBody2D;
-        arrowRb2D.linearVelocity = arrowRb2D.transform.right * _arrowSpeed;
-    }
 
     private Vector2 PointPosition(float timeAfterShot)
     {
@@ -99,6 +113,25 @@ public class Bow : MonoBehaviour
             Shot();
         }
     }
+    private void Shot()
+    {
+        ObjectPool arrow = _pool.GetFreeElement(_bowPosition.position, _bowPosition.rotation);
+        if (arrow == null)
+        {
+            StartCoroutine(nameof(ShowMassage));
+            return;
+        }
+        Rigidbody2D arrowRb2D = arrow.GetRigidBody2D;
+        arrowRb2D.linearVelocity = arrowRb2D.transform.right * _arrowSpeed;
+    }
+
+    IEnumerator ShowMassage()
+    {
+        _massageBox.SetActive(true);
+        yield return new WaitForSeconds(_showTimeMassage);
+        _massageBox.SetActive(false);
+    }
+
     private void RoteteHand()
     {
         _handPosition.transform.Rotate(0.0f, 0.0f, _rotationSpeed * _rotateDirection, Space.Self);
@@ -113,11 +146,11 @@ public class Bow : MonoBehaviour
     {
         foreach (var item in _elementsAiming)
         {
-            item.gameObject.SetActive(true);
+            item.SetActive(true);
         }
         foreach (var item in _defaultElements)
         {
-            item.gameObject.SetActive(false);
+            item.SetActive(false);
         }
     }
 
