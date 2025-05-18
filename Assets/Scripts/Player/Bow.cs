@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 [RequireComponent(typeof(ObjectPoolManager))]
-public class Bow : MonoBehaviour
+public class Bow : Sounds
 {
     [SerializeField] private ObjectPoolManager _pool;
     [SerializeField] private Transform _bowPosition;
@@ -25,6 +25,9 @@ public class Bow : MonoBehaviour
     [Header("Massage")]
     [SerializeField] private GameObject _massageBox;
     [SerializeField] private float _showTimeMassage;
+    [Space(10)]
+    [Header("Sound Settings")]
+    [SerializeField] private float _volume = 1f;
 
     private GameObject[] _points;
 
@@ -121,6 +124,7 @@ public class Bow : MonoBehaviour
             StartCoroutine(nameof(ShowMassage));
             return;
         }
+        PlaySound(0, _volume);
         Rigidbody2D arrowRb2D = arrow.GetRigidBody2D;
         arrowRb2D.linearVelocity = arrowRb2D.transform.right * _arrowSpeed;
     }

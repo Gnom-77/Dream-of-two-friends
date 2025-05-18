@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : Sounds
@@ -82,6 +83,7 @@ public class PlayerMovement : Sounds
         JumpBuffer();
         Jump();
         OnLanding();
+        OnFall();
     }
 
 
@@ -301,6 +303,7 @@ public class PlayerMovement : Sounds
         if (_isLanding == false && CheckGrounding())
         {
             _isLanding = true;
+            _animator.SetBool("IsFall", false);
             _animator.SetBool("IsJumping", false);
             PlaySound(1);
         }
@@ -309,6 +312,17 @@ public class PlayerMovement : Sounds
             _isLanding = false;
         }
     }
+
+    private void OnFall()
+    {
+        if (!CheckGrounding() && _playerRb2D.linearVelocity.y < 0)
+        {
+            _animator.SetBool("IsFall", true);
+            _animator.SetBool("IsJumping", false);
+            return;
+        }
+    }
+
     private void PlayRunSound()
     {
 

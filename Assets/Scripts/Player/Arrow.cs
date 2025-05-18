@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(ObjectPool))]
-public class Arrow : MonoBehaviour
+public class Arrow : Sounds
 {
     [SerializeField] private Rigidbody2D _arrowRb2D;
     [SerializeField] private Collider2D _arrowColl2D;
@@ -11,6 +11,8 @@ public class Arrow : MonoBehaviour
     [SerializeField] private float _lifeTime = 5f;
     [SerializeField] private float _invulnerabilityArrowTime = 0.5f;
     [SerializeField] private string _princeTag;
+    [Header("Sound Settings")]
+    [SerializeField] private float _volume = 1f;
 
     private ObjectPool _poolObject;
     private int _groundAndWallLayerMask;
@@ -45,6 +47,7 @@ public class Arrow : MonoBehaviour
         {
             if (_timeAfterShot > _invulnerabilityArrowTime)
             {
+                PlaySound(0,_volume);
                 _isTrigger = true;
                 _arrowColl2D.enabled = true;
                 _arrowRb2D.constraints = RigidbodyConstraints2D.FreezeAll;

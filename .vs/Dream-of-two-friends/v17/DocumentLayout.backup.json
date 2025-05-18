@@ -7,52 +7,48 @@
       "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\player\\bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\sounds\\soundarrays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sounds\\soundarrays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\sounds\\sounds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sounds\\sounds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\inventory\\uiinventoryitemslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\uiinventoryitemslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\inventory\\uiinventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\uiinventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\sounds\\soundarrays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sounds\\soundarrays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\objectpool\\objectpoolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objectpool\\objectpoolmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\dialogue\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogue\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\dialogue\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogue\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\quests\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quests\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\quests\\findekey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quests\\findekey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\quests\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quests\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\dialogue\\dialogueelements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogue\\dialogueelements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\dialogue\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogue\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\dialogue\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogue\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\dialogue\\dialogueelements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogue\\dialogueelements.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\dialogue\\dialoguedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,11 +62,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ObjectPoolManager.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\ObjectPool\\ObjectPoolManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectPool\\ObjectPoolManager.cs",
+              "ToolTip": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\ObjectPool\\ObjectPoolManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ObjectPool\\ObjectPoolManager.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAuwEcAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T12:56:41.322Z"
             },
             {
               "$type": "Document",
@@ -80,38 +88,27 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Arrow.cs",
               "ToolTip": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Player\\Arrow.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\Arrow.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAkwDQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwDEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-10T10:16:25.151Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UIInventoryItemSlot.cs",
-              "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Inventory\\UIInventoryItemSlot.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\UIInventoryItemSlot.cs",
-              "ToolTip": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Inventory\\UIInventoryItemSlot.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Inventory\\UIInventoryItemSlot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T22:44:24.518Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Bow.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Player\\Bow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Bow.cs",
               "ToolTip": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Player\\Bow.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\Bow.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwDQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T11:47:55.611Z"
+              "WhenOpened": "2025-05-09T11:47:55.611Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SoundArrays.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Sounds\\SoundArrays.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Sounds\\SoundArrays.cs",
@@ -119,35 +116,38 @@
               "RelativeToolTip": "Assets\\Scripts\\Sounds\\SoundArrays.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T12:18:55.809Z"
+              "WhenOpened": "2025-05-07T12:18:55.809Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Sounds.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Sounds\\Sounds.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Sounds\\Sounds.cs",
               "ToolTip": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Sounds\\Sounds.cs",
               "RelativeToolTip": "Assets\\Scripts\\Sounds\\Sounds.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T11:31:25.774Z"
+              "WhenOpened": "2025-05-07T11:31:25.774Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
               "ToolTip": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovement.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAArwEYBAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAB8BAAAAAAAAAAApwFUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T10:37:24.29Z"
+              "WhenOpened": "2025-05-07T10:37:24.29Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "Key.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Quests\\Key.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Quests\\Key.cs",
@@ -159,43 +159,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UIInventoryManager.cs",
-              "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Inventory\\UIInventoryManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\UIInventoryManager.cs",
-              "ToolTip": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Inventory\\UIInventoryManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Inventory\\UIInventoryManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T11:12:40.701Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "FindeKey.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Quests\\FindeKey.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Quests\\FindeKey.cs",
               "ToolTip": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Quests\\FindeKey.cs",
               "RelativeToolTip": "Assets\\Scripts\\Quests\\FindeKey.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAYAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T12:45:01.812Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "DialogueTrigger.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Dialogue\\DialogueTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue\\DialogueTrigger.cs",
               "ToolTip": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Dialogue\\DialogueTrigger.cs",
               "RelativeToolTip": "Assets\\Scripts\\Dialogue\\DialogueTrigger.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAawDoAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAQwGQAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T09:16:32.235Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "DialogueData.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Dialogue\\DialogueData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue\\DialogueData.cs",
@@ -207,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "Dialogue.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Dialogue\\Dialogue.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue\\Dialogue.cs",
@@ -231,13 +219,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "DialogueManager.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Dialogue\\DialogueManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue\\DialogueManager.cs",
               "ToolTip": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Dialogue\\DialogueManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Dialogue\\DialogueManager.cs",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAawJ4AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAHAAAAAAAAAAAADwv3QAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T06:58:21.006Z"
             }
