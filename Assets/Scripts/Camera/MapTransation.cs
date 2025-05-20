@@ -7,6 +7,8 @@ public class MapTransation : MonoBehaviour
     [SerializeField] private CinemachineConfiner2D _confiner;
     [SerializeField] private Transform[] _players;
     [SerializeField] private Transform _spawnPoinInNewLocation;
+    [SerializeField] private GameObject _currentLocation;
+    [SerializeField] private GameObject _nextLocation;
 
     private void Awake()
     {
@@ -20,6 +22,8 @@ public class MapTransation : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player One") || collision.gameObject.CompareTag("Player Two"))
         {
+            _currentLocation.SetActive(false);
+            _nextLocation.SetActive(true);
             foreach (var player in _players)
             {
                 player.transform.position = new Vector2(_spawnPoinInNewLocation.position.x, _spawnPoinInNewLocation.position.y);

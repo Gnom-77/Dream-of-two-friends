@@ -3,6 +3,8 @@ using UnityEngine;
 public class ShowMenuInGame : MonoBehaviour
 {
     [SerializeField] private GameObject _mainMenu;
+    [SerializeField] private GameObject[] _atherMenus;
+
 
     private bool _isActive;
     void Start()
@@ -32,6 +34,14 @@ public class ShowMenuInGame : MonoBehaviour
     public void CloseMenu()
     {
         _mainMenu.SetActive(false);
+        foreach (var item in _atherMenus)
+        {
+            if(item.activeSelf)
+            { 
+                item.SetActive(false); 
+            }
+        }
+
         _isActive = false;
         Time.timeScale = 1.0f;
     }

@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Menu\ShowMenuInGame.cs" />
     <Compile Include="Assets\Scripts\Camera\MultipleTargetCamera.cs" />
     <Compile Include="Assets\Scripts\Dialogue\CharactersIcons.cs" />
+    <Compile Include="Assets\Scripts\Menu\EndGame.cs" />
     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueData.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueElements.cs" />

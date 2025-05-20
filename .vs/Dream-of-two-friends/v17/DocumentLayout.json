@@ -3,11 +3,35 @@
   "WorkspaceRootPath": "C:\\My Project\\Dream-of-two-friends\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|c:\\my project\\dream-of-two-friends\\assets\\scripts\\camera\\backgroundcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|c:\\my project\\dream-of-two-friends\\assets\\scripts\\menu\\endgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menu\\endgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\menu\\mainmenubutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menu\\mainmenubutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\menu\\showmenuingame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menu\\showmenuingame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|c:\\my project\\dream-of-two-friends\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\camera\\backgroundcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\backgroundcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|c:\\my project\\dream-of-two-friends\\assets\\scripts\\player\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\camera\\maptransation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\maptransation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\dialogue\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogue\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\player\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\sounds\\sounds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sounds\\sounds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\sounds\\soundarrays.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\quests\\findekey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quests\\findekey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\dialogue\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogue\\dialoguetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D865E7F6-59A5-1647-CF18-DA2B9F0EB3E0}|Assembly-CSharp.csproj|C:\\My Project\\Dream-of-two-friends\\assets\\scripts\\dialogue\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,19 +91,69 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EndGame.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Menu\\EndGame.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Menu\\EndGame.cs",
+              "ToolTip": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Menu\\EndGame.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Menu\\EndGame.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:35:00.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MapTransation.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Camera\\MapTransation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\MapTransation.cs",
+              "ToolTip": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Camera\\MapTransation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Camera\\MapTransation.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T16:12:18.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShowMenuInGame.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Menu\\ShowMenuInGame.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Menu\\ShowMenuInGame.cs",
+              "ToolTip": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Menu\\ShowMenuInGame.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Menu\\ShowMenuInGame.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T14:39:19.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainMenuButton.cs",
+              "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Menu\\MainMenuButton.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Menu\\MainMenuButton.cs",
+              "ToolTip": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Menu\\MainMenuButton.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Menu\\MainMenuButton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T14:36:55.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "BackgroundController.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Camera\\BackgroundController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\BackgroundController.cs",
               "ToolTip": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Camera\\BackgroundController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Camera\\BackgroundController.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAsAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T12:15:36.212Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T12:15:36.212Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "ObjectPoolManager.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\ObjectPool\\ObjectPoolManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectPool\\ObjectPoolManager.cs",
@@ -99,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Arrow.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Player\\Arrow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Arrow.cs",
@@ -107,12 +173,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\Arrow.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwDEAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T10:16:25.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T10:16:25.151Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Bow.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Player\\Bow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Bow.cs",
@@ -124,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "SoundArrays.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Sounds\\SoundArrays.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Sounds\\SoundArrays.cs",
@@ -136,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Sounds.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Sounds\\Sounds.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Sounds\\Sounds.cs",
@@ -148,19 +213,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
               "ToolTip": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovement.cs",
-              "ViewState": "AgIAAB8BAAAAAAAAAAApwFUAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAEoBAAAAAAAAAAD4v1wBAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T10:37:24.29Z"
+              "WhenOpened": "2025-05-07T10:37:24.29Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "Key.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Quests\\Key.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Quests\\Key.cs",
@@ -172,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "FindeKey.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Quests\\FindeKey.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Quests\\FindeKey.cs",
@@ -184,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "DialogueTrigger.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Dialogue\\DialogueTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue\\DialogueTrigger.cs",
@@ -196,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "DialogueData.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Dialogue\\DialogueData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue\\DialogueData.cs",
@@ -208,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Dialogue.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Dialogue\\Dialogue.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue\\Dialogue.cs",
@@ -220,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "DialogueElements.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Dialogue\\DialogueElements.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue\\DialogueElements.cs",
@@ -232,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "DialogueManager.cs",
               "DocumentMoniker": "C:\\My Project\\Dream-of-two-friends\\Assets\\Scripts\\Dialogue\\DialogueManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue\\DialogueManager.cs",

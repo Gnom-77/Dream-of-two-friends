@@ -6,6 +6,7 @@ public class MainMenuButton : MonoBehaviour
     [SerializeField] private SavedNextSpawnPoint _nextSpawnPoint;
     [SerializeField] private GameObject _settingsMenu;
     [SerializeField] private GameObject _mainMenu;
+    [SerializeField] private GameObject _controllMenu;
 
     public void NewGame()
     {
@@ -29,6 +30,18 @@ public class MainMenuButton : MonoBehaviour
     {
         _settingsMenu.SetActive(true);
         _mainMenu.SetActive(false);
+    }
+
+    public void ControllFromSettings()
+    {
+        _controllMenu.SetActive(true);
+        _settingsMenu.SetActive(false);
+    }
+
+    public void SettingsFromControll()
+    {
+        _settingsMenu.SetActive(true);
+        _controllMenu.SetActive(false);
     }
 
     public void OpenMainMenu()

@@ -457,6 +457,7 @@
 "Assets/Scripts/Inventory/ItemObject.cs"
 "Assets/Scripts/Inventory/UIInventoryItemSlot.cs"
 "Assets/Scripts/Inventory/UIInventoryManager.cs"
+"Assets/Scripts/Menu/EndGame.cs"
 "Assets/Scripts/Menu/MainMenuButton.cs"
 "Assets/Scripts/Menu/SettingsMenu.cs"
 "Assets/Scripts/Menu/ShowMenuInGame.cs"
