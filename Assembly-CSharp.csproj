@@ -73,7 +73,9 @@
     <Compile Include="Assets\Scripts\Player\Combat.cs" />
     <Compile Include="Assets\Scripts\Player\Arrow.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerNumberEnum.cs" />
+    <Compile Include="Assets\Scripts\Quests\Turorial\GetBow.cs" />
     <Compile Include="Assets\Scripts\Player\Spawn Position.cs" />
+    <Compile Include="Assets\Scripts\Quests\Turorial\Tutorial.cs" />
     <Compile Include="Assets\Scripts\Player\Shield.cs" />
     <Compile Include="Assets\Scripts\Quests\Key.cs" />
     <Compile Include="Assets\Scripts\Menu\MainMenuButton.cs" />
