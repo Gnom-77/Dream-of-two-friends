@@ -1,0 +1,70 @@
+{
+    "dialogues": [
+        {
+            "dialogue_name": "Get Arrow Witch",
+            "entries": [
+                {
+                    "character": [
+                        "Маленькая Ведьма",
+                        "Neutral"
+                    ],
+                    "text": "Хмм, лук и стрела.",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": null,
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                },
+                {
+                    "character": [
+                        "Маленькая Ведьма",
+                        "Neutral"
+                    ],
+                    "text": "Зачем Ведьме лук и стрела?",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": "end_dialog",
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                }
+            ]
+        },
+        {
+            "dialogue_name": "Get Arrow Prince",
+            "entries": [
+                {
+                    "character": [
+                        "Принц",
+                        "Neutral"
+                    ],
+                    "text": "Ооо, мой самодельный лук! И одна стрела...",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": null,
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                },
+                {
+                    "character": [
+                        "Принц",
+                        "Neutral"
+                    ],
+                    "text": "На охоту с этим не пойдёшь, но вдруг пригодится.",
+                    "go_to": [],
+                    "options": [],
+                    "wait_seconds": null,
+                    "function": "end_dialog",
+                    "if_condition": null,
+                    "add": null,
+                    "dialogue_type": null
+                }
+            ]
+        }
+    ]
+}

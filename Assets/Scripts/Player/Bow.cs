@@ -55,6 +55,8 @@ public class Bow : Sounds
 
     void Update()
     {
+        if (DialogueManager.GetInstance().GetDialogueIsPlaying())
+            return;
         if (Time.timeScale != 0)
         {
             if (Input.GetKey(KeyCode.K) && _playerMovement.CheckGrounding())

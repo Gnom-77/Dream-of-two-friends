@@ -6,12 +6,14 @@ public class GetBow : MonoBehaviour
     [SerializeField] GameObject _witchDialogueTrigger;
     [SerializeField] GameObject _princeDialogueTrigger;
     [SerializeField] Bow _bowPrinceComponent;
+    [SerializeField] GameObject _bowTutorial;
 
     private void Start()
     {
         _witchDialogueTrigger.SetActive(false);
         _princeDialogueTrigger.SetActive(false);
         _bowPrinceComponent.enabled = false;
+        _bowTutorial.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,5 +34,10 @@ public class GetBow : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void OnDestroy()
+    {
+        _bowTutorial.SetActive(true);
     }
 }
