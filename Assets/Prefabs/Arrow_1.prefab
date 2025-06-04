@@ -81,7 +81,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1583476385
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: -1110184014845234065, guid: a738eaee17cdf0d4197bfb7b8c90ae4f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -187,7 +187,7 @@ MonoBehaviour:
   _arrowheadColl2D: {fileID: 6886165242331915567}
   _groundTagName: Ground
   _lifeTime: 7
-  _invulnerabilityArrowTime: 0.02
+  _invulnerabilityArrowTime: 0.04
   _princeTag: Player One
   _volume: 0.4
 --- !u!114 &6877510719781837662
